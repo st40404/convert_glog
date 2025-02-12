@@ -1,0 +1,1354 @@
+Log file created at: 2025/01/16 08:54:15
+Running on machine: linde-r16
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0116 08:54:15.539601 30161 agv_controller_node.cpp:145]  AGVS main initialize, open file : /home/ros/catkin_ws/src/agv_controller/agv_controller_config/configuration.json
+W0116 08:54:19.077445 30161 auto_charge_finite_state_machine.cpp:70]  AutoChargeFSM: TransitionTo -> N15auto_charge_fsm17WaitChargeMissionE .
+E0116 08:54:19.435883 30271 vehicle_status_monitor.cpp:258] switch to manual mode
+E0116 08:57:02.712921 30271 vehicle_status_monitor.cpp:150] switch to auto mode
+W0116 08:57:03.995775 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 08:57:21.901659 30229 worker_r16_ros.cpp:2121] Current position : (-7.66703,0.197237,179.961)
+W0116 08:57:21.902765 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 08:57:38.805850 30229 worker_r16_ros.cpp:2121] Current position : (1.11327,0.211249,-179.999)
+W0116 08:57:38.807133 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 08:57:56.296375 30229 worker_r16_ros.cpp:2121] Current position : (-7.66596,0.196926,179.887)
+W0116 08:57:56.296461 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 1
+W0116 08:58:01.658653 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 2
+W0116 08:58:07.526760 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 08:58:24.746661 30229 worker_r16_ros.cpp:2121] Current position : (1.11477,0.212356,179.971)
+W0116 08:58:24.747887 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 08:58:42.060302 30229 worker_r16_ros.cpp:2121] Current position : (-7.66632,0.194634,179.883)
+W0116 08:58:42.061690 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 08:58:58.917948 30229 worker_r16_ros.cpp:2121] Current position : (1.12036,0.213562,179.946)
+W0116 08:58:58.918026 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 3
+W0116 08:59:04.247362 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 4
+W0116 08:59:12.095736 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 08:59:29.784180 30229 worker_r16_ros.cpp:2121] Current position : (-7.66713,0.19754,179.922)
+W0116 08:59:29.785391 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 08:59:46.594811 30229 worker_r16_ros.cpp:2121] Current position : (1.11666,0.213223,179.948)
+W0116 08:59:46.596051 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:00:04.261796 30229 worker_r16_ros.cpp:2121] Current position : (-7.67589,0.194254,179.971)
+W0116 09:00:04.261912 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 5
+W0116 09:00:09.834658 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 6
+W0116 09:00:15.618887 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:00:32.799226 30229 worker_r16_ros.cpp:2121] Current position : (1.11564,0.214871,179.939)
+W0116 09:00:32.800621 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:00:50.264290 30229 worker_r16_ros.cpp:2121] Current position : (-7.67006,0.195395,179.917)
+W0116 09:00:50.265550 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:01:07.057117 30229 worker_r16_ros.cpp:2121] Current position : (1.11746,0.212098,179.937)
+W0116 09:01:07.057242 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 7
+W0116 09:01:12.777976 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 8
+W0116 09:01:20.595971 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:01:38.255436 30229 worker_r16_ros.cpp:2121] Current position : (-7.66656,0.195423,179.921)
+W0116 09:01:38.256628 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:01:55.239369 30229 worker_r16_ros.cpp:2121] Current position : (1.11359,0.214134,179.975)
+W0116 09:01:55.240599 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:02:12.696368 30229 worker_r16_ros.cpp:2121] Current position : (-7.66843,0.195259,179.921)
+W0116 09:02:12.696439 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 9
+W0116 09:02:18.415808 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 10
+W0116 09:02:24.094213 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:02:41.502816 30229 worker_r16_ros.cpp:2121] Current position : (1.1128,0.212973,179.958)
+W0116 09:02:41.504230 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:02:58.855796 30229 worker_r16_ros.cpp:2121] Current position : (-7.66762,0.194404,179.942)
+W0116 09:02:58.857306 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:03:15.799237 30229 worker_r16_ros.cpp:2121] Current position : (1.12155,0.213774,179.94)
+W0116 09:03:15.799345 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 11
+W0116 09:03:21.367254 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 12
+W0116 09:03:29.395936 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:03:47.132856 30229 worker_r16_ros.cpp:2121] Current position : (-7.66853,0.196358,179.94)
+W0116 09:03:47.134009 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:04:04.043802 30229 worker_r16_ros.cpp:2121] Current position : (1.11448,0.210589,179.972)
+W0116 09:04:04.045169 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:04:21.445662 30229 worker_r16_ros.cpp:2121] Current position : (-7.66748,0.196982,179.93)
+W0116 09:04:21.445761 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 13
+W0116 09:04:27.016703 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 14
+W0116 09:04:32.774730 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:04:49.947970 30229 worker_r16_ros.cpp:2121] Current position : (1.11573,0.210262,179.962)
+W0116 09:04:49.949275 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:05:07.360018 30229 worker_r16_ros.cpp:2121] Current position : (-7.67072,0.196504,179.927)
+W0116 09:05:07.361160 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:05:24.130079 30229 worker_r16_ros.cpp:2121] Current position : (1.1137,0.213695,179.918)
+W0116 09:05:24.130178 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 15
+W0116 09:05:29.491847 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 16
+W0116 09:05:37.295879 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:05:55.034440 30229 worker_r16_ros.cpp:2121] Current position : (-7.66909,0.195756,179.909)
+W0116 09:05:55.035638 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:06:11.936487 30229 worker_r16_ros.cpp:2121] Current position : (1.1176,0.213469,179.957)
+W0116 09:06:11.937697 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:06:29.345432 30229 worker_r16_ros.cpp:2121] Current position : (-7.66573,0.195786,179.908)
+W0116 09:06:29.345499 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 17
+W0116 09:06:34.730589 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 18
+W0116 09:06:40.463932 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:06:57.587535 30229 worker_r16_ros.cpp:2121] Current position : (1.11774,0.216317,179.953)
+W0116 09:06:57.588835 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:07:14.939605 30229 worker_r16_ros.cpp:2121] Current position : (-7.66592,0.198221,179.917)
+W0116 09:07:14.940742 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:07:32.065573 30229 worker_r16_ros.cpp:2121] Current position : (1.11778,0.211476,179.941)
+W0116 09:07:32.065658 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 19
+W0116 09:07:37.398313 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 20
+W0116 09:07:45.196290 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:08:02.842774 30229 worker_r16_ros.cpp:2121] Current position : (-7.66232,0.197977,179.888)
+W0116 09:08:02.844017 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:08:19.531669 30229 worker_r16_ros.cpp:2121] Current position : (1.11195,0.211595,179.969)
+W0116 09:08:19.533113 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:08:36.781481 30229 worker_r16_ros.cpp:2121] Current position : (-7.6632,0.197305,179.886)
+W0116 09:08:36.781572 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 21
+W0116 09:08:42.109206 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 22
+W0116 09:08:47.824894 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:09:05.114099 30229 worker_r16_ros.cpp:2121] Current position : (1.11981,0.208185,179.921)
+W0116 09:09:05.115427 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:09:22.439368 30229 worker_r16_ros.cpp:2121] Current position : (-7.66504,0.196002,179.863)
+W0116 09:09:22.440609 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:09:39.442229 30229 worker_r16_ros.cpp:2121] Current position : (1.1183,0.215815,179.963)
+W0116 09:09:39.442314 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 23
+W0116 09:09:45.165650 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 24
+E0116 09:09:54.493806 30229 bt_r16_action.cpp:961]  LindeR16ForkLiftClient : onFailedRequest ABORTED_BY_SERVER
+E0116 09:15:31.359541 30271 vehicle_status_monitor.cpp:258] switch to manual mode
+E0116 09:15:35.613782 30271 vehicle_status_monitor.cpp:150] switch to auto mode
+W0116 09:15:37.495978 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:15:55.195683 30229 worker_r16_ros.cpp:2121] Current position : (-7.66904,0.196213,179.94)
+W0116 09:15:55.198065 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:16:12.099108 30229 worker_r16_ros.cpp:2121] Current position : (1.11282,0.212219,179.971)
+W0116 09:16:12.100404 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:16:29.624495 30229 worker_r16_ros.cpp:2121] Current position : (-7.6686,0.196364,179.931)
+W0116 09:16:29.624599 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 25
+W0116 09:16:35.010207 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 26
+W0116 09:16:40.703224 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:16:57.853861 30229 worker_r16_ros.cpp:2121] Current position : (1.11632,0.208543,179.934)
+W0116 09:16:57.855062 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:17:15.550122 30229 worker_r16_ros.cpp:2121] Current position : (-7.66609,0.194757,179.912)
+W0116 09:17:15.551409 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:17:32.289552 30229 worker_r16_ros.cpp:2121] Current position : (1.11244,0.213598,179.971)
+W0116 09:17:32.289628 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 27
+W0116 09:17:37.618439 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 28
+W0116 09:17:45.295828 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:18:02.992563 30229 worker_r16_ros.cpp:2121] Current position : (-7.66837,0.194338,179.933)
+W0116 09:18:02.994107 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:18:19.913339 30229 worker_r16_ros.cpp:2121] Current position : (1.11512,0.214855,179.931)
+W0116 09:18:19.915498 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:18:37.234196 30229 worker_r16_ros.cpp:2121] Current position : (-7.66939,0.198753,179.914)
+W0116 09:18:37.244333 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 29
+W0116 09:18:42.626528 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 30
+W0116 09:18:48.133013 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:19:05.248790 30229 worker_r16_ros.cpp:2121] Current position : (1.11754,0.211648,179.958)
+W0116 09:19:05.250020 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:19:22.587230 30229 worker_r16_ros.cpp:2121] Current position : (-7.66388,0.198537,179.921)
+W0116 09:19:22.588382 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:19:39.384666 30229 worker_r16_ros.cpp:2121] Current position : (1.11445,0.216084,179.931)
+W0116 09:19:39.384744 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 31
+W0116 09:19:44.838327 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 32
+W0116 09:19:52.496129 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:20:10.286276 30229 worker_r16_ros.cpp:2121] Current position : (-7.66794,0.196662,179.921)
+W0116 09:20:10.288024 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:20:27.223577 30229 worker_r16_ros.cpp:2121] Current position : (1.11691,0.210313,179.986)
+W0116 09:20:27.224792 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:20:44.473896 30229 worker_r16_ros.cpp:2121] Current position : (-7.66363,0.195537,179.909)
+W0116 09:20:44.473982 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 33
+W0116 09:20:49.893522 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 34
+W0116 09:20:55.404877 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:21:12.618646 30229 worker_r16_ros.cpp:2121] Current position : (1.11534,0.215112,179.901)
+W0116 09:21:12.621011 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:21:29.945710 30229 worker_r16_ros.cpp:2121] Current position : (-7.66761,0.196789,179.948)
+W0116 09:21:29.946844 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:21:46.800384 30229 worker_r16_ros.cpp:2121] Current position : (1.1203,0.210378,179.956)
+W0116 09:21:46.800452 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 35
+W0116 09:21:52.188599 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 36
+W0116 09:21:59.796098 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:22:17.741750 30229 worker_r16_ros.cpp:2121] Current position : (-7.67187,0.196894,179.974)
+W0116 09:22:17.743048 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:22:34.570057 30229 worker_r16_ros.cpp:2121] Current position : (1.11711,0.209336,179.945)
+W0116 09:22:34.571383 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:22:51.956802 30229 worker_r16_ros.cpp:2121] Current position : (-7.67086,0.196323,179.935)
+W0116 09:22:51.956907 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 37
+W0116 09:22:57.315137 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 38
+W0116 09:23:02.768141 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:23:19.899259 30229 worker_r16_ros.cpp:2121] Current position : (1.11577,0.209919,179.95)
+W0116 09:23:19.900434 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:23:37.313306 30229 worker_r16_ros.cpp:2121] Current position : (-7.66741,0.196347,179.933)
+W0116 09:23:37.314545 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:23:54.135543 30229 worker_r16_ros.cpp:2121] Current position : (1.11437,0.211022,179.956)
+W0116 09:23:54.135625 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 39
+W0116 09:23:59.552208 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 40
+W0116 09:24:07.196079 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:24:24.819531 30229 worker_r16_ros.cpp:2121] Current position : (-7.66656,0.19463,179.924)
+W0116 09:24:24.820717 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:24:41.670857 30229 worker_r16_ros.cpp:2121] Current position : (1.11747,0.211921,179.968)
+W0116 09:24:41.672614 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:24:59.027047 30229 worker_r16_ros.cpp:2121] Current position : (-7.66717,0.195948,179.897)
+W0116 09:24:59.027146 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 41
+W0116 09:25:04.411398 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 42
+W0116 09:25:09.891826 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:25:27.117764 30229 worker_r16_ros.cpp:2121] Current position : (1.11234,0.211993,179.946)
+W0116 09:25:27.119612 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:25:44.455013 30229 worker_r16_ros.cpp:2121] Current position : (-7.66728,0.1965,179.89)
+W0116 09:25:44.456507 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:26:01.359889 30229 worker_r16_ros.cpp:2121] Current position : (1.11605,0.213813,179.964)
+W0116 09:26:01.360001 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 43
+W0116 09:26:06.775024 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 44
+W0116 09:26:14.395922 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:26:32.058028 30229 worker_r16_ros.cpp:2121] Current position : (-7.6651,0.195872,179.902)
+W0116 09:26:32.059267 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:26:49.317427 30229 worker_r16_ros.cpp:2121] Current position : (1.11549,0.216093,179.962)
+W0116 09:26:49.318847 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:27:06.665990 30229 worker_r16_ros.cpp:2121] Current position : (-7.66423,0.196519,179.938)
+W0116 09:27:06.666093 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 45
+W0116 09:27:12.085749 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 46
+W0116 09:27:17.623569 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:27:34.737046 30229 worker_r16_ros.cpp:2121] Current position : (1.11835,0.217486,179.936)
+W0116 09:27:34.738358 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:27:51.967736 30229 worker_r16_ros.cpp:2121] Current position : (-7.66824,0.195313,179.911)
+W0116 09:27:51.968990 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:28:08.709695 30229 worker_r16_ros.cpp:2121] Current position : (1.11513,0.210518,179.991)
+W0116 09:28:08.709780 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 47
+W0116 09:28:14.183471 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 48
+W0116 09:28:21.796479 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:28:39.565289 30229 worker_r16_ros.cpp:2121] Current position : (-7.66768,0.195654,179.926)
+W0116 09:28:39.566474 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:28:56.414208 30229 worker_r16_ros.cpp:2121] Current position : (1.11667,0.212575,179.941)
+W0116 09:28:56.415555 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:29:13.649529 30229 worker_r16_ros.cpp:2121] Current position : (-7.66651,0.194703,179.895)
+W0116 09:29:13.649657 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 49
+W0116 09:29:19.304862 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 50
+W0116 09:29:24.848052 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:29:42.033269 30229 worker_r16_ros.cpp:2121] Current position : (1.11953,0.212329,179.93)
+W0116 09:29:42.035332 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:29:59.443596 30229 worker_r16_ros.cpp:2121] Current position : (-7.66836,0.195847,179.919)
+W0116 09:29:59.445029 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:30:16.252800 30229 worker_r16_ros.cpp:2121] Current position : (1.11488,0.211401,179.952)
+W0116 09:30:16.252898 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 51
+W0116 09:30:21.705680 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 52
+W0116 09:30:29.196100 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:30:46.932320 30229 worker_r16_ros.cpp:2121] Current position : (-7.66491,0.197013,179.889)
+W0116 09:30:46.933601 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:31:03.744719 30229 worker_r16_ros.cpp:2121] Current position : (1.11559,0.211398,179.96)
+W0116 09:31:03.745884 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:31:20.965183 30229 worker_r16_ros.cpp:2121] Current position : (-7.66343,0.195485,179.885)
+W0116 09:31:20.965296 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 53
+W0116 09:31:26.684465 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 54
+W0116 09:31:32.128880 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:31:49.175630 30229 worker_r16_ros.cpp:2121] Current position : (1.11261,0.210824,179.951)
+W0116 09:31:49.176941 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:32:06.566435 30229 worker_r16_ros.cpp:2121] Current position : (-7.66829,0.195638,179.922)
+W0116 09:32:06.567868 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:32:23.248346 30229 worker_r16_ros.cpp:2121] Current position : (1.11701,0.215792,179.908)
+W0116 09:32:23.248428 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 55
+W0116 09:32:28.693835 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 56
+W0116 09:32:36.196074 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:32:53.844560 30229 worker_r16_ros.cpp:2121] Current position : (-7.66576,0.195118,179.885)
+W0116 09:32:53.847290 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:33:10.496290 30229 worker_r16_ros.cpp:2121] Current position : (1.11072,0.215661,179.97)
+W0116 09:33:10.497570 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:33:27.849898 30229 worker_r16_ros.cpp:2121] Current position : (-7.66819,0.197154,179.909)
+W0116 09:33:27.849994 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 57
+W0116 09:33:33.302863 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 58
+W0116 09:33:38.722419 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:33:55.808955 30229 worker_r16_ros.cpp:2121] Current position : (1.11181,0.213527,179.946)
+W0116 09:33:55.810448 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:34:13.188491 30229 worker_r16_ros.cpp:2121] Current position : (-7.6669,0.196476,179.894)
+W0116 09:34:13.190079 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:34:30.002527 30229 worker_r16_ros.cpp:2121] Current position : (1.11338,0.215631,179.965)
+W0116 09:34:30.002616 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 59
+W0116 09:34:35.545243 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 60
+W0116 09:34:43.096269 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:35:00.889084 30229 worker_r16_ros.cpp:2121] Current position : (-7.66924,0.195827,179.928)
+W0116 09:35:00.890378 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:35:17.630549 30229 worker_r16_ros.cpp:2121] Current position : (1.11664,0.211068,179.946)
+W0116 09:35:17.631933 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:35:34.954898 30229 worker_r16_ros.cpp:2121] Current position : (-7.66507,0.196972,179.89)
+W0116 09:35:34.955011 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 61
+W0116 09:35:40.432116 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 62
+W0116 09:35:45.795158 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:36:02.924154 30229 worker_r16_ros.cpp:2121] Current position : (1.11376,0.215334,179.956)
+W0116 09:36:02.925815 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:36:20.383172 30229 worker_r16_ros.cpp:2121] Current position : (-7.66453,0.196001,179.888)
+W0116 09:36:20.384351 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:36:37.125934 30229 worker_r16_ros.cpp:2121] Current position : (1.11431,0.213288,179.94)
+W0116 09:36:37.126025 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 63
+W0116 09:36:42.667299 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 64
+W0116 09:36:50.095932 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:37:07.769459 30229 worker_r16_ros.cpp:2121] Current position : (-7.66852,0.196051,179.962)
+W0116 09:37:07.771129 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:37:24.531739 30229 worker_r16_ros.cpp:2121] Current position : (1.11545,0.213874,179.956)
+W0116 09:37:24.532918 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:37:41.696486 30229 worker_r16_ros.cpp:2121] Current position : (-7.66544,0.194807,179.916)
+W0116 09:37:41.696591 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 65
+W0116 09:37:47.416296 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 66
+W0116 09:37:52.746012 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:38:09.798410 30229 worker_r16_ros.cpp:2121] Current position : (1.11453,0.218016,179.972)
+W0116 09:38:09.799927 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:38:27.057413 30229 worker_r16_ros.cpp:2121] Current position : (-7.66816,0.199075,179.919)
+W0116 09:38:27.058693 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:38:43.828378 30229 worker_r16_ros.cpp:2121] Current position : (1.1132,0.214653,179.918)
+W0116 09:38:43.828552 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 67
+W0116 09:38:49.390084 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 68
+W0116 09:38:56.795960 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:39:14.593425 30229 worker_r16_ros.cpp:2121] Current position : (-7.67116,0.197987,179.951)
+W0116 09:39:14.594794 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:39:31.431588 30229 worker_r16_ros.cpp:2121] Current position : (1.11599,0.215587,179.97)
+W0116 09:39:31.433171 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:39:48.775931 30229 worker_r16_ros.cpp:2121] Current position : (-7.66814,0.195295,179.946)
+W0116 09:39:48.776077 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 69
+W0116 09:39:54.290123 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 70
+W0116 09:39:59.623281 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:40:16.901750 30229 worker_r16_ros.cpp:2121] Current position : (1.11601,0.213071,179.929)
+W0116 09:40:16.903589 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:40:34.263768 30229 worker_r16_ros.cpp:2121] Current position : (-7.66652,0.196699,179.9)
+W0116 09:40:34.265341 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:40:51.000366 30229 worker_r16_ros.cpp:2121] Current position : (1.1156,0.209797,179.948)
+W0116 09:40:51.000466 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 71
+W0116 09:40:56.745875 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 72
+W0116 09:41:04.196225 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:41:21.897365 30229 worker_r16_ros.cpp:2121] Current position : (-7.66744,0.197188,179.914)
+W0116 09:41:21.898902 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:41:38.768590 30229 worker_r16_ros.cpp:2121] Current position : (1.11426,0.210721,179.984)
+W0116 09:41:38.770007 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:41:56.151599 30229 worker_r16_ros.cpp:2121] Current position : (-7.66889,0.195846,179.94)
+W0116 09:41:56.151686 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 73
+W0116 09:42:01.718277 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 74
+W0116 09:42:07.048396 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:42:24.176401 30229 worker_r16_ros.cpp:2121] Current position : (1.11618,0.213172,179.927)
+W0116 09:42:24.177876 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:42:41.554252 30229 worker_r16_ros.cpp:2121] Current position : (-7.66865,0.195333,179.924)
+W0116 09:42:41.555481 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:42:58.420048 30229 worker_r16_ros.cpp:2121] Current position : (1.11658,0.215227,179.98)
+W0116 09:42:58.420138 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 75
+W0116 09:43:03.925408 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 76
+W0116 09:43:11.396098 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:43:29.122711 30229 worker_r16_ros.cpp:2121] Current position : (-7.66817,0.196083,179.917)
+W0116 09:43:29.124045 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:43:45.839998 30229 worker_r16_ros.cpp:2121] Current position : (1.11379,0.214791,179.96)
+W0116 09:43:45.841233 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:44:03.182210 30229 worker_r16_ros.cpp:2121] Current position : (-7.66709,0.196152,179.901)
+W0116 09:44:03.182312 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 77
+W0116 09:44:08.746802 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 78
+W0116 09:44:14.140304 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:44:31.242064 30229 worker_r16_ros.cpp:2121] Current position : (1.11744,0.210627,179.939)
+W0116 09:44:31.243484 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:44:48.511616 30229 worker_r16_ros.cpp:2121] Current position : (-7.66533,0.193924,179.891)
+W0116 09:44:48.513264 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:45:05.340013 30229 worker_r16_ros.cpp:2121] Current position : (1.1201,0.213105,179.978)
+W0116 09:45:05.340126 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 79
+W0116 09:45:11.117234 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 80
+W0116 09:45:18.496109 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:45:36.236110 30229 worker_r16_ros.cpp:2121] Current position : (-7.66593,0.19513,179.913)
+W0116 09:45:36.237488 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:45:53.052093 30229 worker_r16_ros.cpp:2121] Current position : (1.11716,0.213353,179.947)
+W0116 09:45:53.053241 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:46:10.412732 30229 worker_r16_ros.cpp:2121] Current position : (-7.66549,0.196255,179.885)
+W0116 09:46:10.412833 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 81
+W0116 09:46:15.948329 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 82
+W0116 09:46:21.364442 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:46:38.386304 30229 worker_r16_ros.cpp:2121] Current position : (1.11329,0.210474,179.926)
+W0116 09:46:38.387533 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:46:55.639871 30229 worker_r16_ros.cpp:2121] Current position : (-7.66706,0.196855,179.909)
+W0116 09:46:55.641095 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:47:12.408823 30229 worker_r16_ros.cpp:2121] Current position : (1.11335,0.214823,179.91)
+W0116 09:47:12.408906 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 83
+W0116 09:47:17.947997 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 84
+W0116 09:47:25.395998 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:47:43.166353 30229 worker_r16_ros.cpp:2121] Current position : (-7.67134,0.198412,179.929)
+W0116 09:47:43.167584 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:48:00.041290 30229 worker_r16_ros.cpp:2121] Current position : (1.11898,0.212207,179.924)
+W0116 09:48:00.042717 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:48:17.390062 30229 worker_r16_ros.cpp:2121] Current position : (-7.66904,0.193012,179.864)
+W0116 09:48:17.390162 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 85
+W0116 09:48:22.929014 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 86
+W0116 09:48:28.287305 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:48:45.421988 30229 worker_r16_ros.cpp:2121] Current position : (1.1157,0.21331,179.907)
+W0116 09:48:45.423353 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:49:02.752425 30229 worker_r16_ros.cpp:2121] Current position : (-7.66788,0.197742,179.917)
+W0116 09:49:02.753636 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:49:19.530506 30229 worker_r16_ros.cpp:2121] Current position : (1.11655,0.213502,179.908)
+W0116 09:49:19.530592 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 87
+W0116 09:49:25.066820 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 88
+W0116 09:49:32.496472 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:49:50.183992 30229 worker_r16_ros.cpp:2121] Current position : (-7.6642,0.197105,179.901)
+W0116 09:49:50.185300 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:50:06.957398 30229 worker_r16_ros.cpp:2121] Current position : (1.11285,0.214695,179.99)
+W0116 09:50:06.958715 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:50:24.260437 30229 worker_r16_ros.cpp:2121] Current position : (-7.66539,0.195608,179.881)
+W0116 09:50:24.260545 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 89
+W0116 09:50:29.802872 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 90
+W0116 09:50:35.189204 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:50:52.610559 30229 worker_r16_ros.cpp:2121] Current position : (1.11454,0.21177,179.917)
+W0116 09:50:52.612246 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:51:09.738462 30229 worker_r16_ros.cpp:2121] Current position : (-7.67074,0.193352,179.958)
+W0116 09:51:09.740074 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:51:26.520638 30229 worker_r16_ros.cpp:2121] Current position : (1.11589,0.214147,179.963)
+W0116 09:51:26.520730 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 91
+W0116 09:51:32.166746 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 92
+W0116 09:51:39.596498 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:51:57.292282 30229 worker_r16_ros.cpp:2121] Current position : (-7.6698,0.196542,179.924)
+W0116 09:51:57.293576 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:52:14.119552 30229 worker_r16_ros.cpp:2121] Current position : (1.11691,0.210933,179.947)
+W0116 09:52:14.121315 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:52:31.430155 30229 worker_r16_ros.cpp:2121] Current position : (-7.66662,0.195068,179.891)
+W0116 09:52:31.430248 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 93
+W0116 09:52:36.969475 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 94
+W0116 09:52:42.387465 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:52:59.503991 30229 worker_r16_ros.cpp:2121] Current position : (1.11609,0.212907,179.95)
+W0116 09:52:59.505177 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:53:16.768946 30229 worker_r16_ros.cpp:2121] Current position : (-7.66579,0.197599,179.901)
+W0116 09:53:16.770534 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:53:33.510313 30229 worker_r16_ros.cpp:2121] Current position : (1.11234,0.214663,179.945)
+W0116 09:53:33.510468 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 95
+W0116 09:53:39.079219 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 96
+W0116 09:53:46.596257 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:54:04.280897 30229 worker_r16_ros.cpp:2121] Current position : (-7.66494,0.195925,179.894)
+W0116 09:54:04.282102 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:54:21.030150 30229 worker_r16_ros.cpp:2121] Current position : (1.11363,0.214195,179.94)
+W0116 09:54:21.031598 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:54:38.322818 30229 worker_r16_ros.cpp:2121] Current position : (-7.66582,0.195334,179.895)
+W0116 09:54:38.322933 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 97
+W0116 09:54:43.893769 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 98
+W0116 09:54:49.288228 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:55:06.395699 30229 worker_r16_ros.cpp:2121] Current position : (1.11302,0.215346,179.917)
+W0116 09:55:06.397086 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:55:23.675148 30229 worker_r16_ros.cpp:2121] Current position : (-7.66357,0.19358,179.906)
+W0116 09:55:23.676380 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:55:40.445770 30229 worker_r16_ros.cpp:2121] Current position : (1.11714,0.215833,179.939)
+W0116 09:55:40.445864 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 99
+W0116 09:55:46.017539 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 100
+W0116 09:55:53.495997 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:56:11.185765 30229 worker_r16_ros.cpp:2121] Current position : (-7.66502,0.196156,179.927)
+W0116 09:56:11.187666 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:56:27.885141 30229 worker_r16_ros.cpp:2121] Current position : (1.11354,0.216732,179.935)
+W0116 09:56:27.886350 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:56:45.139405 30229 worker_r16_ros.cpp:2121] Current position : (-7.665,0.193812,179.869)
+W0116 09:56:45.139488 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 101
+W0116 09:56:50.705987 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 102
+W0116 09:56:56.194907 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:57:13.301182 30229 worker_r16_ros.cpp:2121] Current position : (1.11445,0.213871,179.962)
+W0116 09:57:13.302561 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:57:30.536077 30229 worker_r16_ros.cpp:2121] Current position : (-7.66655,0.196137,179.905)
+W0116 09:57:30.537571 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:57:47.369174 30229 worker_r16_ros.cpp:2121] Current position : (1.11837,0.212038,179.919)
+W0116 09:57:47.369267 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 103
+W0116 09:57:53.033011 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 104
+W0116 09:58:00.396062 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:58:18.096076 30229 worker_r16_ros.cpp:2121] Current position : (-7.6663,0.195678,179.883)
+W0116 09:58:18.097510 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:58:34.860073 30229 worker_r16_ros.cpp:2121] Current position : (1.12181,0.210208,179.926)
+W0116 09:58:34.861377 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:58:52.129058 30229 worker_r16_ros.cpp:2121] Current position : (-7.66758,0.198114,179.936)
+W0116 09:58:52.129165 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 105
+W0116 09:58:57.727789 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 106
+W0116 09:59:02.999454 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:59:20.179718 30229 worker_r16_ros.cpp:2121] Current position : (1.11466,0.211501,179.94)
+W0116 09:59:20.180954 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 09:59:37.430588 30229 worker_r16_ros.cpp:2121] Current position : (-7.66605,0.197177,179.878)
+W0116 09:59:37.432792 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 09:59:54.293872 30229 worker_r16_ros.cpp:2121] Current position : (1.11549,0.21257,179.933)
+W0116 09:59:54.293962 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 107
+W0116 09:59:59.859875 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 108
+W0116 10:00:07.296015 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:00:24.894070 30229 worker_r16_ros.cpp:2121] Current position : (-7.66591,0.198521,179.896)
+W0116 10:00:24.895709 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:00:42.035492 30229 worker_r16_ros.cpp:2121] Current position : (1.11428,0.213271,179.932)
+W0116 10:00:42.036818 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:00:59.248972 30229 worker_r16_ros.cpp:2121] Current position : (-7.6643,0.198075,179.883)
+W0116 10:00:59.249086 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 109
+W0116 10:01:04.844857 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 110
+W0116 10:01:10.148561 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:01:27.226370 30229 worker_r16_ros.cpp:2121] Current position : (1.11713,0.216391,179.97)
+W0116 10:01:27.227625 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:01:44.511076 30229 worker_r16_ros.cpp:2121] Current position : (-7.66615,0.194009,179.894)
+W0116 10:01:44.513880 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:02:01.325688 30229 worker_r16_ros.cpp:2121] Current position : (1.11876,0.216516,179.911)
+W0116 10:02:01.325793 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 111
+W0116 10:02:06.928654 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 112
+W0116 10:02:14.296001 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:02:31.911783 30229 worker_r16_ros.cpp:2121] Current position : (-7.66589,0.195661,179.92)
+W0116 10:02:31.913697 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:02:48.733245 30229 worker_r16_ros.cpp:2121] Current position : (1.11908,0.21481,179.933)
+W0116 10:02:48.734537 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:03:06.143081 30229 worker_r16_ros.cpp:2121] Current position : (-7.67175,0.195357,179.964)
+W0116 10:03:06.143173 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 113
+W0116 10:03:11.804051 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 114
+W0116 10:03:17.160724 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:03:34.289546 30229 worker_r16_ros.cpp:2121] Current position : (1.11337,0.211269,179.955)
+W0116 10:03:34.290835 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:03:51.622697 30229 worker_r16_ros.cpp:2121] Current position : (-7.66636,0.195468,179.883)
+W0116 10:03:51.624943 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:04:08.468395 30229 worker_r16_ros.cpp:2121] Current position : (1.11609,0.216622,179.891)
+W0116 10:04:08.468484 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 115
+W0116 10:04:14.100852 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 116
+W0116 10:04:21.496208 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:04:39.158460 30229 worker_r16_ros.cpp:2121] Current position : (-7.66761,0.192784,179.9)
+W0116 10:04:39.160029 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:04:56.106123 30229 worker_r16_ros.cpp:2121] Current position : (1.12058,0.216362,179.957)
+W0116 10:04:56.107642 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:05:13.404378 30229 worker_r16_ros.cpp:2121] Current position : (-7.67027,0.197022,179.889)
+W0116 10:05:13.404475 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 117
+W0116 10:05:19.065376 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 118
+W0116 10:05:24.360760 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:05:41.627115 30229 worker_r16_ros.cpp:2121] Current position : (1.1203,0.21203,179.948)
+W0116 10:05:41.628449 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:05:58.895864 30229 worker_r16_ros.cpp:2121] Current position : (-7.66998,0.195513,179.921)
+W0116 10:05:58.897190 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:06:15.673276 30229 worker_r16_ros.cpp:2121] Current position : (1.11537,0.216335,179.954)
+W0116 10:06:15.673352 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 119
+W0116 10:06:21.361301 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 120
+W0116 10:06:28.796310 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:06:46.408538 30229 worker_r16_ros.cpp:2121] Current position : (-7.66765,0.194618,179.909)
+W0116 10:06:46.410430 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:07:03.155634 30229 worker_r16_ros.cpp:2121] Current position : (1.11581,0.214636,179.933)
+W0116 10:07:03.156852 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:07:20.535501 30229 worker_r16_ros.cpp:2121] Current position : (-7.66735,0.195423,179.911)
+W0116 10:07:20.535589 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 121
+W0116 10:07:26.163724 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 122
+W0116 10:07:31.400924 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:07:48.537478 30229 worker_r16_ros.cpp:2121] Current position : (1.11351,0.212641,179.903)
+W0116 10:07:48.538728 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:08:05.853209 30229 worker_r16_ros.cpp:2121] Current position : (-7.66649,0.195406,179.892)
+W0116 10:08:05.854425 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:08:22.667608 30229 worker_r16_ros.cpp:2121] Current position : (1.11691,0.215377,179.932)
+W0116 10:08:22.667704 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 123
+W0116 10:08:28.325502 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 124
+W0116 10:08:35.696112 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:08:53.440450 30229 worker_r16_ros.cpp:2121] Current position : (-7.6698,0.19715,179.925)
+W0116 10:08:53.441985 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:09:10.261682 30229 worker_r16_ros.cpp:2121] Current position : (1.11533,0.212922,179.986)
+W0116 10:09:10.263007 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:09:27.561120 30229 worker_r16_ros.cpp:2121] Current position : (-7.66905,0.197693,179.93)
+W0116 10:09:27.561342 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 125
+W0116 10:09:33.224225 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 126
+W0116 10:09:38.548897 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:09:55.760320 30229 worker_r16_ros.cpp:2121] Current position : (1.1141,0.211995,179.922)
+W0116 10:09:55.761663 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:10:13.184866 30229 worker_r16_ros.cpp:2121] Current position : (-7.66888,0.196145,179.924)
+W0116 10:10:13.186180 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:10:30.177039 30229 worker_r16_ros.cpp:2121] Current position : (1.11648,0.212616,179.923)
+W0116 10:10:30.177151 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 127
+W0116 10:10:35.863379 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 128
+W0116 10:10:43.296213 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:11:01.010628 30229 worker_r16_ros.cpp:2121] Current position : (-7.67034,0.194865,179.912)
+W0116 10:11:01.011940 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:11:17.728072 30229 worker_r16_ros.cpp:2121] Current position : (1.11692,0.213884,179.965)
+W0116 10:11:17.729629 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:11:34.838209 30229 worker_r16_ros.cpp:2121] Current position : (-7.66354,0.197705,179.863)
+W0116 10:11:34.838348 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 129
+W0116 10:11:40.526358 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 130
+W0116 10:11:45.856413 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:12:02.914647 30229 worker_r16_ros.cpp:2121] Current position : (1.11636,0.215707,179.917)
+W0116 10:12:02.915997 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:12:20.204639 30229 worker_r16_ros.cpp:2121] Current position : (-7.66818,0.196979,179.936)
+W0116 10:12:20.205931 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:12:36.896932 30229 worker_r16_ros.cpp:2121] Current position : (1.11288,0.216367,179.947)
+W0116 10:12:36.897028 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 131
+W0116 10:12:42.577715 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 132
+W0116 10:12:49.896059 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:13:07.606739 30229 worker_r16_ros.cpp:2121] Current position : (-7.66764,0.197243,179.888)
+W0116 10:13:07.608075 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:13:24.296499 30229 worker_r16_ros.cpp:2121] Current position : (1.11226,0.216486,179.916)
+W0116 10:13:24.298105 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:13:41.667830 30229 worker_r16_ros.cpp:2121] Current position : (-7.66645,0.195147,179.909)
+W0116 10:13:41.667925 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 133
+W0116 10:13:47.357033 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 134
+W0116 10:13:52.626858 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:14:09.840106 30229 worker_r16_ros.cpp:2121] Current position : (1.11502,0.215193,179.945)
+W0116 10:14:09.841279 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:14:27.248850 30229 worker_r16_ros.cpp:2121] Current position : (-7.66652,0.195853,179.894)
+W0116 10:14:27.250144 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:14:44.057518 30229 worker_r16_ros.cpp:2121] Current position : (1.11619,0.212807,179.951)
+W0116 10:14:44.057628 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 135
+W0116 10:14:49.711788 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 136
+W0116 10:14:57.096194 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:15:15.161260 30229 worker_r16_ros.cpp:2121] Current position : (-7.6674,0.196242,179.898)
+W0116 10:15:15.162587 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:15:31.895517 30229 worker_r16_ros.cpp:2121] Current position : (1.11623,0.213665,179.935)
+W0116 10:15:31.896847 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:15:49.263281 30229 worker_r16_ros.cpp:2121] Current position : (-7.6687,0.195782,179.927)
+W0116 10:15:49.263379 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 137
+W0116 10:15:54.921756 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 138
+W0116 10:16:00.218226 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:16:17.355075 30229 worker_r16_ros.cpp:2121] Current position : (1.11429,0.212365,179.958)
+W0116 10:16:17.356359 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:16:34.654039 30229 worker_r16_ros.cpp:2121] Current position : (-7.66915,0.19671,179.893)
+W0116 10:16:34.655172 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:16:51.410640 30229 worker_r16_ros.cpp:2121] Current position : (1.11665,0.213215,179.972)
+W0116 10:16:51.410732 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 139
+W0116 10:16:57.135228 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 140
+W0116 10:17:04.496021 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:17:22.364286 30229 worker_r16_ros.cpp:2121] Current position : (-7.66703,0.194501,179.911)
+W0116 10:17:22.366722 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:17:39.199729 30229 worker_r16_ros.cpp:2121] Current position : (1.11938,0.212548,179.952)
+W0116 10:17:39.200968 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:17:56.576653 30229 worker_r16_ros.cpp:2121] Current position : (-7.66844,0.197906,179.925)
+W0116 10:17:56.576756 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 141
+W0116 10:18:02.267902 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 142
+W0116 10:18:07.539974 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:18:24.648990 30229 worker_r16_ros.cpp:2121] Current position : (1.11185,0.213993,179.945)
+W0116 10:18:24.650368 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:18:42.026973 30229 worker_r16_ros.cpp:2121] Current position : (-7.66632,0.195295,179.907)
+W0116 10:18:42.028939 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:18:58.725065 30229 worker_r16_ros.cpp:2121] Current position : (1.11633,0.21441,179.942)
+W0116 10:18:58.725154 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 143
+W0116 10:19:04.388165 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 144
+W0116 10:19:11.796125 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:19:29.490010 30229 worker_r16_ros.cpp:2121] Current position : (-7.66989,0.194965,179.913)
+W0116 10:19:29.491382 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:19:46.247663 30229 worker_r16_ros.cpp:2121] Current position : (1.11328,0.21433,179.906)
+W0116 10:19:46.249271 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:20:03.581107 30229 worker_r16_ros.cpp:2121] Current position : (-7.66808,0.195598,179.923)
+W0116 10:20:03.581210 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 145
+W0116 10:20:09.298887 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 146
+W0116 10:20:14.565754 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:20:31.595651 30229 worker_r16_ros.cpp:2121] Current position : (1.11801,0.215265,179.95)
+W0116 10:20:31.597055 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:20:48.797009 30229 worker_r16_ros.cpp:2121] Current position : (-7.66672,0.197046,179.899)
+W0116 10:20:48.798275 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:21:05.542160 30229 worker_r16_ros.cpp:2121] Current position : (1.12309,0.211255,179.929)
+W0116 10:21:05.542260 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 147
+W0116 10:21:11.264237 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 148
+W0116 10:21:18.696599 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:21:36.285015 30229 worker_r16_ros.cpp:2121] Current position : (-7.66343,0.198099,179.901)
+W0116 10:21:36.286293 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:21:53.145015 30229 worker_r16_ros.cpp:2121] Current position : (1.12073,0.216859,179.935)
+W0116 10:21:53.146214 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:22:10.452893 30229 worker_r16_ros.cpp:2121] Current position : (-7.6683,0.195644,179.91)
+W0116 10:22:10.453011 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 149
+W0116 10:22:16.142560 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 150
+W0116 10:22:21.380323 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:22:38.404557 30229 worker_r16_ros.cpp:2121] Current position : (1.11399,0.212452,179.927)
+W0116 10:22:38.405884 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:22:55.775383 30229 worker_r16_ros.cpp:2121] Current position : (-7.66512,0.196313,179.916)
+W0116 10:22:55.776742 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:23:12.629047 30229 worker_r16_ros.cpp:2121] Current position : (1.11681,0.212888,179.928)
+W0116 10:23:12.629124 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 151
+W0116 10:23:18.317456 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 152
+W0116 10:23:25.696044 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:23:43.354262 30229 worker_r16_ros.cpp:2121] Current position : (-7.66385,0.194777,179.867)
+W0116 10:23:43.355394 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:24:00.172992 30229 worker_r16_ros.cpp:2121] Current position : (1.1177,0.215657,179.954)
+W0116 10:24:00.174324 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:24:17.520596 30229 worker_r16_ros.cpp:2121] Current position : (-7.66545,0.195711,179.851)
+W0116 10:24:17.520684 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 153
+W0116 10:24:23.209095 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 154
+W0116 10:24:28.474789 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:24:45.741041 30229 worker_r16_ros.cpp:2121] Current position : (1.11393,0.214396,179.946)
+W0116 10:24:45.742341 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:25:03.354585 30229 worker_r16_ros.cpp:2121] Current position : (-7.66863,0.194247,179.909)
+W0116 10:25:03.375617 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:25:20.084524 30229 worker_r16_ros.cpp:2121] Current position : (1.12187,0.214927,179.933)
+W0116 10:25:20.084625 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 155
+W0116 10:25:25.802145 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 156
+W0116 10:25:33.097164 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:25:50.645015 30229 worker_r16_ros.cpp:2121] Current position : (-7.66868,0.19549,179.897)
+W0116 10:25:50.646391 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:26:07.380134 30229 worker_r16_ros.cpp:2121] Current position : (1.11763,0.213063,179.96)
+W0116 10:26:07.381713 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:26:24.641572 30229 worker_r16_ros.cpp:2121] Current position : (-7.66716,0.19564,179.894)
+W0116 10:26:24.641716 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 157
+W0116 10:26:30.364739 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 158
+W0116 10:26:35.821709 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:26:53.197782 30229 worker_r16_ros.cpp:2121] Current position : (1.11251,0.214851,179.965)
+W0116 10:26:53.199168 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:27:10.503541 30229 worker_r16_ros.cpp:2121] Current position : (-7.66659,0.197335,179.9)
+W0116 10:27:10.505340 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:27:27.260689 30229 worker_r16_ros.cpp:2121] Current position : (1.11512,0.212982,179.939)
+W0116 10:27:27.260788 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 159
+E0116 10:27:27.664376 30271 vehicle_status_monitor.cpp:258] switch to manual mode
+W0116 10:27:27.670645 30229 bt_r16_action.cpp:973]  LindeR16ForkLiftClient : halt halted 
+E0116 10:27:34.414350 30271 vehicle_status_monitor.cpp:150] switch to auto mode
+W0116 10:27:35.996336 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:27:53.705406 30229 worker_r16_ros.cpp:2121] Current position : (-7.66333,0.197012,179.865)
+W0116 10:27:53.707126 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:28:10.330209 30229 worker_r16_ros.cpp:2121] Current position : (1.11466,0.217521,179.987)
+W0116 10:28:10.331638 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:28:27.785286 30229 worker_r16_ros.cpp:2121] Current position : (-7.66763,0.198066,179.914)
+W0116 10:28:27.785374 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 160
+W0116 10:28:33.506222 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 161
+W0116 10:28:38.771051 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:28:56.064441 30229 worker_r16_ros.cpp:2121] Current position : (1.11418,0.213176,179.963)
+W0116 10:28:56.065762 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:29:13.315320 30229 worker_r16_ros.cpp:2121] Current position : (-7.6661,0.194395,179.894)
+W0116 10:29:13.316728 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:29:30.090369 30229 worker_r16_ros.cpp:2121] Current position : (1.11526,0.213723,179.931)
+W0116 10:29:30.090451 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 162
+W0116 10:29:35.780706 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 163
+W0116 10:29:43.295980 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:30:01.428402 30229 worker_r16_ros.cpp:2121] Current position : (-7.67424,0.198264,179.932)
+W0116 10:30:01.429706 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:30:18.057122 30229 worker_r16_ros.cpp:2121] Current position : (1.11251,0.21622,179.925)
+W0116 10:30:18.058420 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:30:35.286619 30229 worker_r16_ros.cpp:2121] Current position : (-7.66576,0.196899,179.918)
+W0116 10:30:35.286703 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 164
+W0116 10:30:41.038381 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 165
+W0116 10:30:46.272272 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:31:03.404480 30229 worker_r16_ros.cpp:2121] Current position : (1.11532,0.214428,179.945)
+W0116 10:31:03.405910 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:31:20.614698 30229 worker_r16_ros.cpp:2121] Current position : (-7.66784,0.195471,179.9)
+W0116 10:31:20.616425 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:31:37.395195 30229 worker_r16_ros.cpp:2121] Current position : (1.11904,0.211032,179.954)
+W0116 10:31:37.395293 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 166
+W0116 10:31:43.087265 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 167
+W0116 10:31:50.396718 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:32:08.020304 30229 worker_r16_ros.cpp:2121] Current position : (-7.66852,0.19563,179.907)
+W0116 10:32:08.021523 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:32:24.874186 30229 worker_r16_ros.cpp:2121] Current position : (1.11795,0.210526,179.944)
+W0116 10:32:24.875844 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:32:42.186802 30229 worker_r16_ros.cpp:2121] Current position : (-7.66823,0.198131,179.944)
+W0116 10:32:42.186898 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 168
+W0116 10:32:47.932921 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 169
+W0116 10:32:53.206872 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:33:10.392323 30229 worker_r16_ros.cpp:2121] Current position : (1.1138,0.211984,179.954)
+W0116 10:33:10.394933 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:33:27.644098 30229 worker_r16_ros.cpp:2121] Current position : (-7.66641,0.197677,179.903)
+W0116 10:33:27.645395 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:33:44.383437 30229 worker_r16_ros.cpp:2121] Current position : (1.11397,0.213365,179.943)
+W0116 10:33:44.383538 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 170
+W0116 10:33:50.105187 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 171
+W0116 10:33:57.396014 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:34:15.047130 30229 worker_r16_ros.cpp:2121] Current position : (-7.66771,0.195354,179.873)
+W0116 10:34:15.048731 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:34:31.952981 30229 worker_r16_ros.cpp:2121] Current position : (1.11658,0.212192,179.926)
+W0116 10:34:31.954236 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:34:49.620528 30229 worker_r16_ros.cpp:2121] Current position : (-7.66909,0.196036,179.924)
+W0116 10:34:49.620608 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 172
+W0116 10:34:55.368407 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 173
+W0116 10:35:00.641258 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:35:17.909366 30229 worker_r16_ros.cpp:2121] Current position : (1.1173,0.208098,179.98)
+W0116 10:35:17.911943 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:35:35.306375 30229 worker_r16_ros.cpp:2121] Current position : (-7.6673,0.196739,179.912)
+W0116 10:35:35.307767 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:35:52.384675 30229 worker_r16_ros.cpp:2121] Current position : (1.1165,0.21309,179.961)
+W0116 10:35:52.384755 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 174
+W0116 10:35:58.163113 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 175
+W0116 10:36:05.497475 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:36:23.100289 30229 worker_r16_ros.cpp:2121] Current position : (-7.66799,0.198309,179.907)
+W0116 10:36:23.101531 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:36:39.837532 30229 worker_r16_ros.cpp:2121] Current position : (1.11681,0.210606,179.909)
+W0116 10:36:39.838816 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:36:57.141299 30229 worker_r16_ros.cpp:2121] Current position : (-7.66549,0.198823,179.892)
+W0116 10:36:57.141395 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 176
+W0116 10:37:02.893289 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 177
+W0116 10:37:08.135046 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:37:25.225754 30229 worker_r16_ros.cpp:2121] Current position : (1.11459,0.212948,179.929)
+W0116 10:37:25.227033 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:37:42.472059 30229 worker_r16_ros.cpp:2121] Current position : (-7.66527,0.196051,179.863)
+W0116 10:37:42.473387 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:37:59.414260 30229 worker_r16_ros.cpp:2121] Current position : (1.11901,0.208877,179.955)
+W0116 10:37:59.414351 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 178
+W0116 10:38:05.164757 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 179
+W0116 10:38:12.496098 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:38:30.356360 30229 worker_r16_ros.cpp:2121] Current position : (-7.67163,0.196376,179.989)
+W0116 10:38:30.357645 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:38:47.224067 30229 worker_r16_ros.cpp:2121] Current position : (1.11445,0.209203,179.969)
+W0116 10:38:47.225216 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:39:04.489442 30229 worker_r16_ros.cpp:2121] Current position : (-7.66625,0.196065,179.92)
+W0116 10:39:04.489624 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 180
+W0116 10:39:10.212986 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 181
+W0116 10:39:15.451897 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:39:32.636796 30229 worker_r16_ros.cpp:2121] Current position : (1.11338,0.210617,179.949)
+W0116 10:39:32.638120 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:39:50.299871 30229 worker_r16_ros.cpp:2121] Current position : (-7.66921,0.196104,179.89)
+W0116 10:39:50.301282 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:40:07.118317 30229 worker_r16_ros.cpp:2121] Current position : (1.11723,0.216398,179.973)
+W0116 10:40:07.118402 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 182
+W0116 10:40:12.868640 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 183
+W0116 10:40:20.196379 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:40:37.903033 30229 worker_r16_ros.cpp:2121] Current position : (-7.66846,0.19598,179.964)
+W0116 10:40:37.904307 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:40:54.612483 30229 worker_r16_ros.cpp:2121] Current position : (1.11442,0.213904,179.935)
+W0116 10:40:54.615252 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:41:11.899124 30229 worker_r16_ros.cpp:2121] Current position : (-7.66626,0.196658,179.922)
+W0116 10:41:11.899220 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 184
+W0116 10:41:17.649971 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 185
+W0116 10:41:22.892437 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:41:40.045260 30229 worker_r16_ros.cpp:2121] Current position : (1.11586,0.213662,179.951)
+W0116 10:41:40.046864 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:41:57.235311 30229 worker_r16_ros.cpp:2121] Current position : (-7.6659,0.196918,179.906)
+W0116 10:41:57.236605 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:42:14.037557 30229 worker_r16_ros.cpp:2121] Current position : (1.11757,0.212211,179.951)
+W0116 10:42:14.037653 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 186
+W0116 10:42:19.817107 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 187
+W0116 10:42:27.095917 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:42:44.754683 30229 worker_r16_ros.cpp:2121] Current position : (-7.66315,0.198798,179.854)
+W0116 10:42:44.755956 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:43:01.442641 30229 worker_r16_ros.cpp:2121] Current position : (1.11315,0.215294,179.951)
+W0116 10:43:01.444126 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:43:18.779359 30229 worker_r16_ros.cpp:2121] Current position : (-7.66814,0.196592,179.904)
+W0116 10:43:18.779453 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 188
+W0116 10:43:24.526731 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 189
+W0116 10:43:30.062798 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:43:47.356422 30229 worker_r16_ros.cpp:2121] Current position : (1.11591,0.212852,179.959)
+W0116 10:43:47.357769 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:44:04.605597 30229 worker_r16_ros.cpp:2121] Current position : (-7.66619,0.195248,179.91)
+W0116 10:44:04.606863 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:44:21.509835 30229 worker_r16_ros.cpp:2121] Current position : (1.11958,0.211113,179.94)
+W0116 10:44:21.509936 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 190
+W0116 10:44:27.288587 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 191
+W0116 10:44:34.896134 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:44:52.591812 30229 worker_r16_ros.cpp:2121] Current position : (-7.66667,0.195886,179.901)
+W0116 10:44:52.593127 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:45:09.391139 30229 worker_r16_ros.cpp:2121] Current position : (1.11904,0.215276,179.971)
+W0116 10:45:09.392735 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:45:26.621781 30229 worker_r16_ros.cpp:2121] Current position : (-7.66575,0.195588,179.877)
+W0116 10:45:26.621870 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 192
+W0116 10:45:32.429095 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 193
+W0116 10:45:37.668853 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:45:54.810621 30229 worker_r16_ros.cpp:2121] Current position : (1.11829,0.216086,179.904)
+W0116 10:45:54.811846 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:46:12.049105 30229 worker_r16_ros.cpp:2121] Current position : (-7.66936,0.196139,179.911)
+W0116 10:46:12.050271 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:46:28.714669 30229 worker_r16_ros.cpp:2121] Current position : (1.11523,0.215645,179.939)
+W0116 10:46:28.714751 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 194
+W0116 10:46:34.494457 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 195
+W0116 10:46:41.796311 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:46:59.454159 30229 worker_r16_ros.cpp:2121] Current position : (-7.66685,0.195576,179.915)
+W0116 10:46:59.455247 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:47:16.360502 30229 worker_r16_ros.cpp:2121] Current position : (1.11615,0.216959,179.972)
+W0116 10:47:16.362099 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:47:33.652248 30229 worker_r16_ros.cpp:2121] Current position : (-7.66457,0.196408,179.9)
+W0116 10:47:33.652351 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 196
+W0116 10:47:39.429949 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 197
+W0116 10:47:44.609813 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:48:01.816466 30229 worker_r16_ros.cpp:2121] Current position : (1.11292,0.214385,179.986)
+W0116 10:48:01.817792 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:48:19.202920 30229 worker_r16_ros.cpp:2121] Current position : (-7.66911,0.196449,179.941)
+W0116 10:48:19.204391 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:48:36.030476 30229 worker_r16_ros.cpp:2121] Current position : (1.11768,0.213888,179.936)
+W0116 10:48:36.030576 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 198
+W0116 10:48:41.775753 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 199
+W0116 10:48:49.096668 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:49:06.783926 30229 worker_r16_ros.cpp:2121] Current position : (-7.66948,0.194284,179.942)
+W0116 10:49:06.786473 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:49:23.562872 30229 worker_r16_ros.cpp:2121] Current position : (1.1129,0.215409,179.926)
+W0116 10:49:23.564174 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:49:40.843328 30229 worker_r16_ros.cpp:2121] Current position : (-7.66509,0.194315,179.904)
+W0116 10:49:40.843416 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 200
+W0116 10:49:46.648237 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 201
+W0116 10:49:51.882625 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:50:09.076853 30229 worker_r16_ros.cpp:2121] Current position : (1.11225,0.213869,179.9)
+W0116 10:50:09.078277 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:50:26.377686 30229 worker_r16_ros.cpp:2121] Current position : (-7.66785,0.194729,179.928)
+W0116 10:50:26.379055 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:50:43.150321 30229 worker_r16_ros.cpp:2121] Current position : (1.11747,0.211396,179.965)
+W0116 10:50:43.150418 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 202
+W0116 10:50:48.991793 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 203
+W0116 10:50:56.299232 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:51:13.960670 30229 worker_r16_ros.cpp:2121] Current position : (-7.66629,0.196771,179.88)
+W0116 10:51:13.962589 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:51:30.646525 30229 worker_r16_ros.cpp:2121] Current position : (1.11158,0.21391,179.957)
+W0116 10:51:30.647859 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:51:47.884014 30229 worker_r16_ros.cpp:2121] Current position : (-7.66696,0.195705,179.871)
+W0116 10:51:47.884131 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 204
+W0116 10:51:53.698348 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 205
+W0116 10:51:58.937129 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:52:16.040374 30229 worker_r16_ros.cpp:2121] Current position : (1.11142,0.214366,179.919)
+W0116 10:52:16.041769 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:52:33.413856 30229 worker_r16_ros.cpp:2121] Current position : (-7.66727,0.194902,179.93)
+W0116 10:52:33.415362 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:52:50.302295 30229 worker_r16_ros.cpp:2121] Current position : (1.11881,0.209711,179.94)
+W0116 10:52:50.302387 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 206
+W0116 10:52:56.110405 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 207
+W0116 10:53:03.396358 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:53:21.103314 30229 worker_r16_ros.cpp:2121] Current position : (-7.6679,0.19722,179.928)
+W0116 10:53:21.104451 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:53:37.857829 30229 worker_r16_ros.cpp:2121] Current position : (1.11683,0.212981,179.982)
+W0116 10:53:37.859133 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:53:55.147100 30229 worker_r16_ros.cpp:2121] Current position : (-7.66666,0.198517,179.884)
+W0116 10:53:55.147199 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 208
+W0116 10:54:00.956171 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 209
+W0116 10:54:06.169171 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:54:23.346349 30229 worker_r16_ros.cpp:2121] Current position : (1.11235,0.211005,179.955)
+W0116 10:54:23.347864 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:54:40.618808 30229 worker_r16_ros.cpp:2121] Current position : (-7.66657,0.196458,179.882)
+W0116 10:54:40.620419 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:54:57.368525 30229 worker_r16_ros.cpp:2121] Current position : (1.11543,0.215182,179.944)
+W0116 10:54:57.368628 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 210
+W0116 10:55:03.175949 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 211
+W0116 10:55:10.495887 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:55:28.287595 30229 worker_r16_ros.cpp:2121] Current position : (-7.67011,0.196958,179.936)
+W0116 10:55:28.288861 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:55:45.101449 30229 worker_r16_ros.cpp:2121] Current position : (1.1194,0.212729,179.941)
+W0116 10:55:45.102675 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:56:02.440253 30229 worker_r16_ros.cpp:2121] Current position : (-7.6673,0.196011,179.921)
+W0116 10:56:02.440368 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 212
+W0116 10:56:08.275936 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 213
+W0116 10:56:13.485989 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:56:30.576236 30229 worker_r16_ros.cpp:2121] Current position : (1.11429,0.214787,179.946)
+W0116 10:56:30.577713 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:56:48.112308 30229 worker_r16_ros.cpp:2121] Current position : (-7.66999,0.19605,179.941)
+W0116 10:56:48.113665 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:57:05.463263 30229 worker_r16_ros.cpp:2121] Current position : (1.11743,0.211911,179.933)
+W0116 10:57:05.463439 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 214
+W0116 10:57:11.240623 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 215
+W0116 10:57:18.496284 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:57:36.237222 30229 worker_r16_ros.cpp:2121] Current position : (-7.66685,0.195615,179.921)
+W0116 10:57:36.238688 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:57:53.041610 30229 worker_r16_ros.cpp:2121] Current position : (1.11521,0.216332,179.921)
+W0116 10:57:53.042870 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:58:10.379158 30229 worker_r16_ros.cpp:2121] Current position : (-7.66867,0.19773,179.915)
+W0116 10:58:10.379271 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 216
+W0116 10:58:16.189702 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 217
+W0116 10:58:21.400323 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:58:38.594370 30229 worker_r16_ros.cpp:2121] Current position : (1.11403,0.217388,179.931)
+W0116 10:58:38.595912 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:58:55.963693 30229 worker_r16_ros.cpp:2121] Current position : (-7.6681,0.196675,179.94)
+W0116 10:58:55.964916 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 10:59:12.806486 30229 worker_r16_ros.cpp:2121] Current position : (1.11308,0.213349,179.932)
+W0116 10:59:12.806615 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 218
+W0116 10:59:18.617599 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 219
+W0116 10:59:26.005869 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 10:59:43.717685 30229 worker_r16_ros.cpp:2121] Current position : (-7.66762,0.198232,179.9)
+W0116 10:59:43.719175 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:00:00.461220 30229 worker_r16_ros.cpp:2121] Current position : (1.11459,0.212845,179.984)
+W0116 11:00:00.462524 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:00:17.638520 30229 worker_r16_ros.cpp:2121] Current position : (-7.6672,0.195161,179.92)
+W0116 11:00:17.638628 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 220
+W0116 11:00:23.482777 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 221
+W0116 11:00:28.722059 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:00:45.721472 30229 worker_r16_ros.cpp:2121] Current position : (1.11266,0.213533,179.928)
+W0116 11:00:45.722638 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:01:02.913475 30229 worker_r16_ros.cpp:2121] Current position : (-7.67016,0.194117,179.93)
+W0116 11:01:02.914723 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:01:19.760638 30229 worker_r16_ros.cpp:2121] Current position : (1.11556,0.214374,179.967)
+W0116 11:01:19.760721 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 222
+W0116 11:01:25.596239 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 223
+W0116 11:01:32.896070 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:01:50.546296 30229 worker_r16_ros.cpp:2121] Current position : (-7.66752,0.195948,179.915)
+W0116 11:01:50.547489 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:02:07.260771 30229 worker_r16_ros.cpp:2121] Current position : (1.11262,0.217004,179.926)
+W0116 11:02:07.262073 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:02:24.514765 30229 worker_r16_ros.cpp:2121] Current position : (-7.66799,0.194603,179.921)
+W0116 11:02:24.514869 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 224
+W0116 11:02:30.355126 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 225
+W0116 11:02:35.562155 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:02:52.699100 30229 worker_r16_ros.cpp:2121] Current position : (1.11248,0.213705,179.924)
+W0116 11:02:52.700356 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:03:09.983855 30229 worker_r16_ros.cpp:2121] Current position : (-7.66676,0.197607,179.891)
+W0116 11:03:09.985173 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:03:26.728412 30229 worker_r16_ros.cpp:2121] Current position : (1.11617,0.209148,179.955)
+W0116 11:03:26.728590 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 226
+W0116 11:03:32.511075 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 227
+W0116 11:03:39.795979 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:03:57.494769 30229 worker_r16_ros.cpp:2121] Current position : (-7.66728,0.194416,179.91)
+W0116 11:03:57.496030 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:04:14.549970 30229 worker_r16_ros.cpp:2121] Current position : (1.1129,0.212977,179.932)
+W0116 11:04:14.551147 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:04:31.934572 30229 worker_r16_ros.cpp:2121] Current position : (-7.66675,0.197394,179.907)
+W0116 11:04:31.934662 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 228
+W0116 11:04:37.738931 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 229
+W0116 11:04:42.974280 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:05:00.144711 30229 worker_r16_ros.cpp:2121] Current position : (1.117,0.211904,179.929)
+W0116 11:05:00.145968 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:05:17.357877 30229 worker_r16_ros.cpp:2121] Current position : (-7.66573,0.196135,179.909)
+W0116 11:05:17.359141 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:05:34.043404 30229 worker_r16_ros.cpp:2121] Current position : (1.11535,0.217852,179.945)
+W0116 11:05:34.043490 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 230
+W0116 11:05:39.881528 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 231
+W0116 11:05:47.196125 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:06:04.798482 30229 worker_r16_ros.cpp:2121] Current position : (-7.66372,0.195427,179.871)
+W0116 11:06:04.800004 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:06:21.629456 30229 worker_r16_ros.cpp:2121] Current position : (1.11462,0.213147,179.942)
+W0116 11:06:21.630743 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:06:38.937703 30229 worker_r16_ros.cpp:2121] Current position : (-7.66784,0.193924,179.908)
+W0116 11:06:38.937793 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 232
+W0116 11:06:44.776548 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 233
+W0116 11:06:50.015246 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:07:07.259143 30229 worker_r16_ros.cpp:2121] Current position : (1.11203,0.212481,179.928)
+W0116 11:07:07.262092 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:07:24.560349 30229 worker_r16_ros.cpp:2121] Current position : (-7.66824,0.198227,179.927)
+W0116 11:07:24.561645 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:07:41.262281 30229 worker_r16_ros.cpp:2121] Current position : (1.11298,0.214251,179.923)
+W0116 11:07:41.262370 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 234
+W0116 11:07:47.101563 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 235
+W0116 11:07:54.396063 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:08:12.015553 30229 worker_r16_ros.cpp:2121] Current position : (-7.66386,0.197166,179.898)
+W0116 11:08:12.016896 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:08:28.787216 30229 worker_r16_ros.cpp:2121] Current position : (1.11638,0.212865,179.953)
+W0116 11:08:28.788542 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:08:46.130769 30229 worker_r16_ros.cpp:2121] Current position : (-7.66736,0.19757,179.919)
+W0116 11:08:46.130851 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 236
+W0116 11:08:51.966106 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 237
+W0116 11:08:57.149138 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:09:14.675805 30229 worker_r16_ros.cpp:2121] Current position : (1.11504,0.212357,179.97)
+W0116 11:09:14.677075 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:09:31.854892 30229 worker_r16_ros.cpp:2121] Current position : (-7.66822,0.195551,179.91)
+W0116 11:09:31.856166 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:09:49.092732 30229 worker_r16_ros.cpp:2121] Current position : (1.12504,0.214321,179.992)
+W0116 11:09:49.092831 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 238
+W0116 11:09:54.931850 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 239
+W0116 11:10:02.196063 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:10:19.936060 30229 worker_r16_ros.cpp:2121] Current position : (-7.66935,0.197641,179.925)
+W0116 11:10:19.937343 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:10:36.716500 30229 worker_r16_ros.cpp:2121] Current position : (1.11825,0.212652,179.933)
+W0116 11:10:36.717862 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:10:54.049693 30229 worker_r16_ros.cpp:2121] Current position : (-7.66926,0.19568,179.9)
+W0116 11:10:54.049796 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 240
+W0116 11:10:59.887964 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 241
+W0116 11:11:05.428931 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:11:22.471632 30229 worker_r16_ros.cpp:2121] Current position : (1.11409,0.215052,179.935)
+W0116 11:11:22.473299 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:11:39.842092 30229 worker_r16_ros.cpp:2121] Current position : (-7.66767,0.194315,179.922)
+W0116 11:11:39.843482 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:11:56.613994 30229 worker_r16_ros.cpp:2121] Current position : (1.1144,0.212711,179.937)
+W0116 11:11:56.614107 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 242
+W0116 11:12:02.480438 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 243
+W0116 11:12:09.796098 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:12:27.414506 30229 worker_r16_ros.cpp:2121] Current position : (-7.6684,0.196825,179.912)
+W0116 11:12:27.415863 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:12:44.278209 30229 worker_r16_ros.cpp:2121] Current position : (1.12385,0.215004,179.936)
+W0116 11:12:44.279773 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:13:01.652906 30229 worker_r16_ros.cpp:2121] Current position : (-7.66524,0.195051,179.899)
+W0116 11:13:01.652993 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 244
+W0116 11:13:07.488669 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 245
+W0116 11:13:12.732977 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:13:29.957937 30229 worker_r16_ros.cpp:2121] Current position : (1.11955,0.215099,179.953)
+W0116 11:13:29.959344 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:13:47.317175 30229 worker_r16_ros.cpp:2121] Current position : (-7.66556,0.19748,179.897)
+W0116 11:13:47.318749 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:14:04.106927 30229 worker_r16_ros.cpp:2121] Current position : (1.1144,0.220677,179.949)
+W0116 11:14:04.107054 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 246
+W0116 11:14:09.975976 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 247
+W0116 11:14:17.597571 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:14:35.177528 30229 worker_r16_ros.cpp:2121] Current position : (-7.66731,0.194681,179.896)
+W0116 11:14:35.178929 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:14:51.913470 30229 worker_r16_ros.cpp:2121] Current position : (1.11433,0.213977,179.937)
+W0116 11:14:51.915047 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:15:09.256119 30229 worker_r16_ros.cpp:2121] Current position : (-7.66681,0.196617,179.919)
+W0116 11:15:09.256280 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 248
+W0116 11:15:15.124020 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 249
+W0116 11:15:20.454687 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:15:37.549928 30229 worker_r16_ros.cpp:2121] Current position : (1.11564,0.213181,179.963)
+W0116 11:15:37.551229 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:15:54.852599 30229 worker_r16_ros.cpp:2121] Current position : (-7.66565,0.196423,179.881)
+W0116 11:15:54.853977 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:16:11.707106 30229 worker_r16_ros.cpp:2121] Current position : (1.11487,0.215319,179.973)
+W0116 11:16:11.707211 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 250
+W0116 11:16:17.582005 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 251
+W0116 11:16:24.895947 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:16:42.588678 30229 worker_r16_ros.cpp:2121] Current position : (-7.66572,0.195617,179.884)
+W0116 11:16:42.590000 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:16:59.363131 30229 worker_r16_ros.cpp:2121] Current position : (1.11283,0.213654,179.933)
+W0116 11:16:59.364882 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:17:16.624928 30229 worker_r16_ros.cpp:2121] Current position : (-7.66853,0.195113,179.91)
+W0116 11:17:16.625010 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 252
+W0116 11:17:22.492508 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 253
+W0116 11:17:27.787976 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:17:44.926611 30229 worker_r16_ros.cpp:2121] Current position : (1.11614,0.214195,179.917)
+W0116 11:17:44.927740 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:18:02.251963 30229 worker_r16_ros.cpp:2121] Current position : (-7.66703,0.194672,179.908)
+W0116 11:18:02.253173 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:18:19.197798 30229 worker_r16_ros.cpp:2121] Current position : (1.11591,0.20937,179.935)
+W0116 11:18:19.197911 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 254
+W0116 11:18:25.071595 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 255
+W0116 11:18:32.396116 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:18:50.128844 30229 worker_r16_ros.cpp:2121] Current position : (-7.66675,0.195346,179.895)
+W0116 11:18:50.130362 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:19:07.389490 30229 worker_r16_ros.cpp:2121] Current position : (1.11666,0.212369,179.954)
+W0116 11:19:07.390614 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:19:24.676147 30229 worker_r16_ros.cpp:2121] Current position : (-7.66651,0.198048,179.866)
+W0116 11:19:24.676234 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 256
+W0116 11:19:30.544844 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 257
+W0116 11:19:35.781252 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:19:52.919936 30229 worker_r16_ros.cpp:2121] Current position : (1.11849,0.214705,179.951)
+W0116 11:19:52.921139 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:20:10.215047 30229 worker_r16_ros.cpp:2121] Current position : (-7.66238,0.196778,179.891)
+W0116 11:20:10.216490 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:20:26.973524 30229 worker_r16_ros.cpp:2121] Current position : (1.11417,0.215688,179.915)
+W0116 11:20:26.973613 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 258
+W0116 11:20:32.817584 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 259
+W0116 11:20:40.196288 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:20:57.807577 30229 worker_r16_ros.cpp:2121] Current position : (-7.66547,0.196325,179.896)
+W0116 11:20:57.823155 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:21:14.454618 30229 worker_r16_ros.cpp:2121] Current position : (1.10887,0.213392,179.918)
+W0116 11:21:14.456159 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:21:31.831271 30229 worker_r16_ros.cpp:2121] Current position : (-7.66838,0.19616,179.907)
+W0116 11:21:31.831382 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 260
+W0116 11:21:37.697310 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 261
+W0116 11:21:42.995229 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:22:00.245299 30229 worker_r16_ros.cpp:2121] Current position : (1.11771,0.214901,179.953)
+W0116 11:22:00.246533 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:22:17.528329 30229 worker_r16_ros.cpp:2121] Current position : (-7.66302,0.194675,179.872)
+W0116 11:22:17.592073 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:22:34.452812 30229 worker_r16_ros.cpp:2121] Current position : (1.11324,0.213134,179.93)
+W0116 11:22:34.452934 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 262
+W0116 11:22:40.348114 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 263
+W0116 11:22:47.696096 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:23:05.253249 30229 worker_r16_ros.cpp:2121] Current position : (-7.66627,0.195947,179.94)
+W0116 11:23:05.254457 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:23:22.109215 30229 worker_r16_ros.cpp:2121] Current position : (1.11395,0.211286,179.954)
+W0116 11:23:22.110486 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:23:39.382314 30229 worker_r16_ros.cpp:2121] Current position : (-7.66845,0.195179,179.906)
+W0116 11:23:39.382413 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 264
+W0116 11:23:45.249660 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 265
+W0116 11:23:50.548667 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:24:08.018131 30229 worker_r16_ros.cpp:2121] Current position : (1.11123,0.212746,179.926)
+W0116 11:24:08.019855 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:24:25.209645 30229 worker_r16_ros.cpp:2121] Current position : (-7.66976,0.1963,179.932)
+W0116 11:24:25.210979 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:24:42.104306 30229 worker_r16_ros.cpp:2121] Current position : (1.11754,0.214457,179.945)
+W0116 11:24:42.104436 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 266
+W0116 11:24:48.029418 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 267
+W0116 11:24:55.295745 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:25:12.989136 30229 worker_r16_ros.cpp:2121] Current position : (-7.66718,0.196627,179.901)
+W0116 11:25:12.990428 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:25:29.743834 30229 worker_r16_ros.cpp:2121] Current position : (1.11609,0.212784,179.981)
+W0116 11:25:29.745074 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:25:46.995959 30229 worker_r16_ros.cpp:2121] Current position : (-7.66673,0.19665,179.92)
+W0116 11:25:46.996048 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 268
+W0116 11:25:52.834723 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 269
+W0116 11:25:58.107446 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:26:15.168854 30229 worker_r16_ros.cpp:2121] Current position : (1.11552,0.213572,179.948)
+W0116 11:26:15.170087 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:26:32.456729 30229 worker_r16_ros.cpp:2121] Current position : (-7.66844,0.193684,179.898)
+W0116 11:26:32.458114 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:26:49.251197 30229 worker_r16_ros.cpp:2121] Current position : (1.12009,0.214949,179.94)
+W0116 11:26:49.251392 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 270
+W0116 11:26:55.118386 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 271
+W0116 11:27:02.495854 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:27:20.152705 30229 worker_r16_ros.cpp:2121] Current position : (-7.66775,0.196223,179.915)
+W0116 11:27:20.153853 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:27:36.930920 30229 worker_r16_ros.cpp:2121] Current position : (1.11472,0.211587,179.95)
+W0116 11:27:36.932255 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:27:54.242031 30229 worker_r16_ros.cpp:2121] Current position : (-7.66619,0.196029,179.897)
+W0116 11:27:54.242115 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 272
+W0116 11:28:00.200130 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 273
+W0116 11:28:05.467120 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:28:22.614041 30229 worker_r16_ros.cpp:2121] Current position : (1.11708,0.212249,179.921)
+W0116 11:28:22.615417 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:28:39.912504 30229 worker_r16_ros.cpp:2121] Current position : (-7.66611,0.196786,179.916)
+W0116 11:28:39.914393 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:28:56.811412 30229 worker_r16_ros.cpp:2121] Current position : (1.11228,0.213737,179.94)
+W0116 11:28:56.811499 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 274
+W0116 11:29:02.707577 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 275
+W0116 11:29:10.096063 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:29:27.734755 30229 worker_r16_ros.cpp:2121] Current position : (-7.67249,0.198016,179.919)
+W0116 11:29:27.736034 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:29:44.428618 30229 worker_r16_ros.cpp:2121] Current position : (1.11388,0.214713,179.943)
+W0116 11:29:44.429932 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:30:01.557344 30229 worker_r16_ros.cpp:2121] Current position : (-7.66552,0.195459,179.875)
+W0116 11:30:01.557447 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 276
+W0116 11:30:07.488408 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 277
+W0116 11:30:12.760743 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:30:29.782912 30229 worker_r16_ros.cpp:2121] Current position : (1.11291,0.214768,179.939)
+W0116 11:30:29.784183 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:30:47.083629 30229 worker_r16_ros.cpp:2121] Current position : (-7.66799,0.197415,179.919)
+W0116 11:30:47.084832 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:31:03.740481 30229 worker_r16_ros.cpp:2121] Current position : (1.11621,0.214374,179.905)
+W0116 11:31:03.740561 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 278
+W0116 11:31:09.665414 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 279
+W0116 11:31:17.001019 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:31:34.702323 30229 worker_r16_ros.cpp:2121] Current position : (-7.66746,0.197765,179.928)
+W0116 11:31:34.703667 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:31:51.407339 30229 worker_r16_ros.cpp:2121] Current position : (1.11761,0.213928,179.977)
+W0116 11:31:51.408667 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:32:08.687211 30229 worker_r16_ros.cpp:2121] Current position : (-7.66533,0.193432,179.862)
+W0116 11:32:08.687299 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 280
+W0116 11:32:14.588833 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 281
+W0116 11:32:19.863396 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:32:36.859623 30229 worker_r16_ros.cpp:2121] Current position : (1.11691,0.214343,179.919)
+W0116 11:32:36.860837 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:32:54.253960 30229 worker_r16_ros.cpp:2121] Current position : (-7.66794,0.195728,179.895)
+W0116 11:32:54.255456 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:33:11.042948 30229 worker_r16_ros.cpp:2121] Current position : (1.11294,0.215103,179.929)
+W0116 11:33:11.043085 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 282
+W0116 11:33:16.944033 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 283
+W0116 11:33:24.298121 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:33:41.967242 30229 worker_r16_ros.cpp:2121] Current position : (-7.6682,0.195466,179.892)
+W0116 11:33:41.969858 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:33:59.195996 30229 worker_r16_ros.cpp:2121] Current position : (1.11563,0.213465,179.929)
+W0116 11:33:59.197227 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:34:16.302647 30229 worker_r16_ros.cpp:2121] Current position : (-7.66548,0.193414,179.898)
+W0116 11:34:16.302752 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 284
+W0116 11:34:22.233832 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 285
+W0116 11:34:27.537369 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:34:44.541710 30229 worker_r16_ros.cpp:2121] Current position : (1.11238,0.21362,179.962)
+W0116 11:34:44.542961 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:35:01.756358 30229 worker_r16_ros.cpp:2121] Current position : (-7.66751,0.196548,179.932)
+W0116 11:35:01.757576 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:35:18.564703 30229 worker_r16_ros.cpp:2121] Current position : (1.11754,0.213225,179.952)
+W0116 11:35:18.564819 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 286
+W0116 11:35:24.464233 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 287
+W0116 11:35:31.796222 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:35:49.506861 30229 worker_r16_ros.cpp:2121] Current position : (-7.66828,0.19797,179.919)
+W0116 11:35:49.508795 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:36:06.359578 30229 worker_r16_ros.cpp:2121] Current position : (1.11549,0.212092,179.965)
+W0116 11:36:06.360823 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:36:23.652509 30229 worker_r16_ros.cpp:2121] Current position : (-7.66761,0.19518,179.898)
+W0116 11:36:23.652611 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 288
+W0116 11:36:29.548964 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 289
+W0116 11:36:34.880831 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:36:52.049260 30229 worker_r16_ros.cpp:2121] Current position : (1.11473,0.213678,179.92)
+W0116 11:36:52.050311 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:37:09.293965 30229 worker_r16_ros.cpp:2121] Current position : (-7.66527,0.196723,179.883)
+W0116 11:37:09.295311 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:37:26.059880 30229 worker_r16_ros.cpp:2121] Current position : (1.11385,0.214148,179.919)
+W0116 11:37:26.059966 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 290
+W0116 11:37:31.991290 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 291
+W0116 11:37:39.396124 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:37:57.148905 30229 worker_r16_ros.cpp:2121] Current position : (-7.66928,0.192241,179.941)
+W0116 11:37:57.150130 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:38:13.875319 30229 worker_r16_ros.cpp:2121] Current position : (1.11681,0.215367,179.936)
+W0116 11:38:13.876597 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:38:31.253216 30229 worker_r16_ros.cpp:2121] Current position : (-7.66626,0.19584,179.9)
+W0116 11:38:31.253298 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 292
+W0116 11:38:37.150419 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 293
+W0116 11:38:42.454526 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:39:00.094499 30229 worker_r16_ros.cpp:2121] Current position : (1.11344,0.212184,179.934)
+W0116 11:39:00.095867 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:39:17.441841 30229 worker_r16_ros.cpp:2121] Current position : (-7.6676,0.195531,179.903)
+W0116 11:39:17.443053 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:39:34.227262 30229 worker_r16_ros.cpp:2121] Current position : (1.11808,0.21598,179.946)
+W0116 11:39:34.227360 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 294
+W0116 11:39:40.155134 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 295
+W0116 11:39:47.503072 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:40:05.160928 30229 worker_r16_ros.cpp:2121] Current position : (-7.66869,0.195983,179.898)
+W0116 11:40:05.162537 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:40:21.966054 30229 worker_r16_ros.cpp:2121] Current position : (1.11562,0.21242,179.954)
+W0116 11:40:21.967648 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:40:39.221699 30229 worker_r16_ros.cpp:2121] Current position : (-7.66607,0.197473,179.917)
+W0116 11:40:39.236097 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 296
+W0116 11:40:45.194636 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 297
+W0116 11:40:50.462567 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:41:07.438608 30229 worker_r16_ros.cpp:2121] Current position : (1.11323,0.214485,179.941)
+W0116 11:41:07.439913 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:41:24.700421 30229 worker_r16_ros.cpp:2121] Current position : (-7.66811,0.199109,179.903)
+W0116 11:41:24.701678 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:41:41.525487 30229 worker_r16_ros.cpp:2121] Current position : (1.11559,0.21434,179.951)
+W0116 11:41:41.525583 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 298
+W0116 11:41:47.457301 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 299
+W0116 11:41:54.796236 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:42:12.480626 30229 worker_r16_ros.cpp:2121] Current position : (-7.6675,0.193127,179.888)
+W0116 11:42:12.481827 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:42:29.300223 30229 worker_r16_ros.cpp:2121] Current position : (1.11679,0.214462,179.931)
+W0116 11:42:29.301426 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:42:46.572115 30229 worker_r16_ros.cpp:2121] Current position : (-7.66731,0.196709,179.91)
+W0116 11:42:46.572202 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 300
+W0116 11:42:52.530076 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 301
+W0116 11:42:57.827040 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:43:14.958709 30229 worker_r16_ros.cpp:2121] Current position : (1.11474,0.21562,179.908)
+W0116 11:43:14.960271 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:43:32.338970 30229 worker_r16_ros.cpp:2121] Current position : (-7.66844,0.196336,179.904)
+W0116 11:43:32.340270 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:43:49.541965 30229 worker_r16_ros.cpp:2121] Current position : (1.11573,0.213851,179.897)
+W0116 11:43:49.542054 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 302
+W0116 11:43:55.498185 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 303
+W0116 11:44:02.796284 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:44:20.416208 30229 worker_r16_ros.cpp:2121] Current position : (-7.67058,0.196341,179.907)
+W0116 11:44:20.417496 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:44:37.192931 30229 worker_r16_ros.cpp:2121] Current position : (1.11474,0.215561,179.95)
+W0116 11:44:37.194233 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:44:54.579910 30229 worker_r16_ros.cpp:2121] Current position : (-7.66825,0.199627,179.901)
+W0116 11:44:54.580017 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 304
+W0116 11:45:00.511274 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 305
+W0116 11:45:05.692575 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:45:22.757108 30229 worker_r16_ros.cpp:2121] Current position : (1.11525,0.214081,179.932)
+W0116 11:45:22.758611 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:45:40.045569 30229 worker_r16_ros.cpp:2121] Current position : (-7.66893,0.197785,179.924)
+W0116 11:45:40.046877 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:45:56.741457 30229 worker_r16_ros.cpp:2121] Current position : (1.11207,0.214396,179.908)
+W0116 11:45:56.741551 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 306
+W0116 11:46:02.705809 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 307
+W0116 11:46:09.996222 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:46:27.648677 30229 worker_r16_ros.cpp:2121] Current position : (-7.66538,0.195984,179.891)
+W0116 11:46:27.649888 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:46:44.429473 30229 worker_r16_ros.cpp:2121] Current position : (1.11716,0.21208,179.927)
+W0116 11:46:44.444972 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:47:01.711297 30229 worker_r16_ros.cpp:2121] Current position : (-7.66528,0.196184,179.893)
+W0116 11:47:01.711428 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 308
+W0116 11:47:07.608822 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 309
+W0116 11:47:12.788168 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:47:29.924881 30229 worker_r16_ros.cpp:2121] Current position : (1.11844,0.212612,179.952)
+W0116 11:47:29.926231 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:47:47.300719 30229 worker_r16_ros.cpp:2121] Current position : (-7.67019,0.196942,179.945)
+W0116 11:47:47.302161 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:48:04.043072 30229 worker_r16_ros.cpp:2121] Current position : (1.11432,0.216891,179.936)
+W0116 11:48:04.043157 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 310
+W0116 11:48:10.008059 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 311
+W0116 11:48:17.296132 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:48:35.061898 30229 worker_r16_ros.cpp:2121] Current position : (-7.66644,0.197586,179.877)
+W0116 11:48:35.063166 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:48:52.053094 30229 worker_r16_ros.cpp:2121] Current position : (1.11514,0.213985,179.929)
+W0116 11:48:52.054234 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:49:09.239815 30229 worker_r16_ros.cpp:2121] Current position : (-7.66585,0.195148,179.917)
+W0116 11:49:09.239960 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 312
+W0116 11:49:15.232434 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 313
+W0116 11:49:20.348487 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:49:37.340637 30229 worker_r16_ros.cpp:2121] Current position : (1.1162,0.212501,179.919)
+W0116 11:49:37.341898 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:49:54.607157 30229 worker_r16_ros.cpp:2121] Current position : (-7.66934,0.196134,179.938)
+W0116 11:49:54.608472 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:50:11.299558 30229 worker_r16_ros.cpp:2121] Current position : (1.11374,0.214712,179.939)
+W0116 11:50:11.299690 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 314
+W0116 11:50:17.226495 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 315
+W0116 11:50:24.695917 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:50:42.349762 30229 worker_r16_ros.cpp:2121] Current position : (-7.66627,0.195915,179.891)
+W0116 11:50:42.351061 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:50:59.118023 30229 worker_r16_ros.cpp:2121] Current position : (1.11686,0.213426,179.975)
+W0116 11:50:59.119553 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:51:16.503685 30229 worker_r16_ros.cpp:2121] Current position : (-7.66806,0.196138,179.907)
+W0116 11:51:16.503767 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 316
+W0116 11:51:22.462193 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 317
+W0116 11:51:27.699623 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:51:44.940538 30229 worker_r16_ros.cpp:2121] Current position : (1.11856,0.213638,179.927)
+W0116 11:51:44.942528 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:52:02.127370 30229 worker_r16_ros.cpp:2121] Current position : (-7.66723,0.198428,179.905)
+W0116 11:52:02.128615 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:52:18.861666 30229 worker_r16_ros.cpp:2121] Current position : (1.11476,0.21218,179.927)
+W0116 11:52:18.861755 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 318
+W0116 11:52:24.817852 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 319
+E0116 11:52:33.033635 30229 bt_r16_action.cpp:961]  LindeR16ForkLiftClient : onFailedRequest ABORTED_BY_SERVER
+E0116 11:53:17.994479 30271 vehicle_status_monitor.cpp:258] switch to manual mode
+E0116 11:53:20.464460 30271 vehicle_status_monitor.cpp:150] switch to auto mode
+W0116 11:53:22.295887 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:53:40.370332 30229 worker_r16_ros.cpp:2121] Current position : (-7.67025,0.197037,179.922)
+W0116 11:53:40.371695 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:53:57.132692 30229 worker_r16_ros.cpp:2121] Current position : (1.1154,0.214022,179.957)
+W0116 11:53:57.133997 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:54:14.469136 30229 worker_r16_ros.cpp:2121] Current position : (-7.6722,0.198964,179.949)
+W0116 11:54:14.469280 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 320
+W0116 11:54:20.490132 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 321
+W0116 11:54:25.702502 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:54:42.725426 30229 worker_r16_ros.cpp:2121] Current position : (1.11484,0.216813,179.964)
+W0116 11:54:42.726814 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:54:59.972389 30229 worker_r16_ros.cpp:2121] Current position : (-7.6672,0.195805,179.897)
+W0116 11:54:59.974673 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:55:16.857789 30229 worker_r16_ros.cpp:2121] Current position : (1.1165,0.213083,179.965)
+W0116 11:55:16.871965 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 322
+W0116 11:55:22.836014 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 323
+W0116 11:55:30.096040 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:55:47.638465 30229 worker_r16_ros.cpp:2121] Current position : (-7.66659,0.197441,179.883)
+W0116 11:55:47.639804 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:56:04.389427 30229 worker_r16_ros.cpp:2121] Current position : (1.11589,0.208538,179.917)
+W0116 11:56:04.390915 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:56:21.637246 30229 worker_r16_ros.cpp:2121] Current position : (-7.66502,0.196279,179.9)
+W0116 11:56:21.637392 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 324
+W0116 11:56:27.624492 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 325
+W0116 11:56:32.834231 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:56:49.928802 30229 worker_r16_ros.cpp:2121] Current position : (1.11632,0.213059,179.935)
+W0116 11:56:49.930080 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:57:07.338923 30229 worker_r16_ros.cpp:2121] Current position : (-7.66664,0.197724,179.889)
+W0116 11:57:07.340301 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:57:24.238692 30229 worker_r16_ros.cpp:2121] Current position : (1.10983,0.216942,179.918)
+W0116 11:57:24.238786 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 326
+W0116 11:57:30.227142 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 327
+W0116 11:57:37.396065 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:57:55.130626 30229 worker_r16_ros.cpp:2121] Current position : (-7.66781,0.196676,179.931)
+W0116 11:57:55.132064 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:58:11.966266 30229 worker_r16_ros.cpp:2121] Current position : (1.11807,0.214203,179.958)
+W0116 11:58:11.967514 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:58:29.242460 30229 worker_r16_ros.cpp:2121] Current position : (-7.66516,0.196285,179.906)
+W0116 11:58:29.242554 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 328
+W0116 11:58:35.201926 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 329
+W0116 11:58:40.347142 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:58:57.540922 30229 worker_r16_ros.cpp:2121] Current position : (1.11689,0.216116,179.933)
+W0116 11:58:57.542210 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 11:59:14.827386 30229 worker_r16_ros.cpp:2121] Current position : (-7.66933,0.19549,179.96)
+W0116 11:59:14.828847 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 11:59:31.603379 30229 worker_r16_ros.cpp:2121] Current position : (1.1165,0.212853,179.953)
+W0116 11:59:31.603520 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 330
+W0116 11:59:37.566529 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 331
+W0116 11:59:44.796037 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 12:00:02.542429 30229 worker_r16_ros.cpp:2121] Current position : (-7.66869,0.194152,179.923)
+W0116 12:00:02.544667 30229 worker_r16_ros.cpp:1205] target : (1.13, 0.201, 180)
+W0116 12:00:19.202396 30229 worker_r16_ros.cpp:2121] Current position : (1.11551,0.211283,179.918)
+W0116 12:00:19.204071 30229 worker_r16_ros.cpp:1205] target : (-7.68, 0.201, 180)
+W0116 12:00:36.417665 30229 worker_r16_ros.cpp:2121] Current position : (-7.66752,0.195222,179.906)
+W0116 12:00:36.417775 30229 worker_r16_ros.cpp:2873] pressure_test_forklift : 332
+W0116 12:00:42.314615 30229 worker_r16_ros.cpp:2868] pressure_test_forklift : 333
+E0116 12:00:50.890563 30229 bt_r16_action.cpp:961]  LindeR16ForkLiftClient : onFailedRequest ABORTED_BY_SERVER
+W0116 12:01:07.790475 30161 agv_controller_node.cpp:687]  AGV Controller main exit !
+E0116 12:01:07.803378 30229 worker_r16_ros.cpp:3056] WorkerR16Ros::threadBody get exception: std::bad_alloc.
