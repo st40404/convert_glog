@@ -45,7 +45,8 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                     file_info, data = line.split("]")
                     value = data.split(":")
                     item = value[0].strip()
-                except:
+                except Exception as e:
+                    print("Error: ", e)
                     item = ""
 
                 if item == "pressure_test_forklift":

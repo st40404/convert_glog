@@ -1,0 +1,1362 @@
+Log file created at: 2025/02/13 13:24:25
+Running on machine: linde-r16
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0213 13:24:25.532184 264029 waypoint_planner_log_system.cpp:52] WaypointGlobalPlanner FLAGS_log_dir = ./Log/WaypointGlobalPlanner
+I0213 13:24:25.532486 264029 waypoint_planner_log_system.cpp:59] WaypointGlobalPlanner FLAGS_logtostderr = 0
+I0213 13:24:25.532493 264029 waypoint_planner_log_system.cpp:66] WaypointGlobalPlanner FLAGS_alsologtostderr = 1
+I0213 13:24:25.532498 264029 waypoint_planner_log_system.cpp:73] WaypointGlobalPlanner FLAGS_colorlogtostderr = 1
+I0213 13:24:25.532501 264029 waypoint_planner_log_system.cpp:80] WaypointGlobalPlanner FLAGS_stderrthreshold = 2
+I0213 13:24:25.532505 264029 waypoint_planner_log_system.cpp:87] WaypointGlobalPlanner FLAGS_log_prefix = 1
+I0213 13:24:25.532508 264029 waypoint_planner_log_system.cpp:94] WaypointGlobalPlanner FLAGS_logbuflevel = -1
+I0213 13:24:25.532514 264029 waypoint_planner_log_system.cpp:101] WaypointGlobalPlanner FLAGS_logbufsecs = 10
+I0213 13:24:25.532521 264029 waypoint_planner_log_system.cpp:108] WaypointGlobalPlanner FLAGS_minloglevel = 0
+I0213 13:24:25.532526 264029 waypoint_planner_log_system.cpp:122] WaypointGlobalPlanner FLAGS_max_log_size = 1024
+I0213 13:24:25.532531 264029 waypoint_planner_log_system.cpp:129] WaypointGlobalPlanner FLAGS_stop_logging_if_full_disk = 1
+I0213 13:24:25.533206 264029 waypoint_planner_log_system.cpp:150] WaypointGlobalPlanner FLAGS_v = 2
+I0213 13:24:25.533221 264029 waypoint_planner_log_system.cpp:152] WaypointGlobalPlanner GLOG Init ! 
+I0213 13:24:25.533232 264029 waypoint_global_planner.cpp:251] initialize name : WaypointGlobalPlanner ,  global_frame_id : map ,  base_frame_id : imu_link .
+I0213 13:24:25.533824 264029 waypoint_global_planner.cpp:267] initialize base_local_planner : teb_local_planner
+I0213 13:24:25.533905 264029 reconfigure_client.h:51]  Local_Planner_Reconfigure_Client *1* ReconfigureClient ctor!
+I0213 13:24:25.537763 264029 teb_reconfigure_client.h:20]  Local_Planner_Reconfigure_Client *2* TebReconfigureClient ctor!
+I0213 13:24:25.538352 264029 waypoint_global_planner.cpp:301] initialize local_planner_config_switch_threshold: 0.3 m.
+I0213 13:24:25.538913 264029 waypoint_global_planner.cpp:308] initialize reduce_Max_Theta_AccTheta_curvature: 0.3 .
+I0213 13:24:25.539467 264029 waypoint_global_planner.cpp:316] initialize teb_parameter_type : LindeR16 .
+I0213 13:24:25.540026 264029 waypoint_global_planner.cpp:326] initialize local_planner controller_frequency : 25 Hz.
+I0213 13:24:25.540704 264029 waypoint_global_planner.cpp:334] initialize local_planner min_turning_radius : 0.4 m.
+I0213 13:24:25.541384 264029 failure_detector.cpp:12] FailureDetector failure_detector/oscillation_v_eps : 0.1 .
+I0213 13:24:25.542016 264029 failure_detector.cpp:18] FailureDetector failure_detector/oscillation_omega_eps : 0.1 .
+I0213 13:24:25.542637 264029 failure_detector.cpp:24] FailureDetector failure_detector/oscillation_recovery_min_duration : 10 .
+I0213 13:24:25.543223 264029 failure_detector.cpp:30] FailureDetector failure_detector/oscillation_filter_duration : 3 .
+I0213 13:24:25.543304 264029 failure_detector.hpp:50] setBufferLength Set buffer length (measurement history) : 75 .
+I0213 13:24:25.543987 264029 waypoint_global_planner.cpp:352] initialize epsilon : 0.2 .
+I0213 13:24:25.544512 264029 waypoint_global_planner.cpp:360] initialize waypoints_per_meter : 50 .
+I0213 13:24:25.545136 264029 waypoint_global_planner.cpp:381] initialize path_departure_dist : 0.2 m.
+I0213 13:24:25.545747 264029 waypoint_global_planner.cpp:388] initialize path_departure_dist_log : 0.1 m.
+I0213 13:24:25.552091 264029 waypoint_global_planner.cpp:416] initialize odom_topic: odom_combined
+I0213 13:24:25.554586 264029 waypoint_global_planner.cpp:436] initialize ac.isServerConnected() SimpleClientGoalState : LOST
+W0213 13:24:25.554623 264029 waypoint_global_planner.cpp:439] initialize action client is not connected to the action server, waiting for action server to start.
+W0213 13:24:26.555051 264029 waypoint_global_planner.cpp:445] initialize ac.waitForServer() duration = 1000.5 ms >= 1000 ms
+E0213 13:24:26.555107 264029 waypoint_global_planner.cpp:452] initializeaction_server not connected [LOST]
+I0213 13:24:26.559826 264029 visualize_path.cpp:16] arrow_length : 0.1 .
+I0213 13:24:26.560319 264029 visualize_path.cpp:22] arrow_width : 0.01 .
+I0213 13:24:26.560781 264029 visualize_path.cpp:28] arrow_height : 0.01 .
+I0213 13:24:26.561244 264029 visualize_path.cpp:34] sphere_x_diameter : 0.02 .
+I0213 13:24:26.561722 264029 visualize_path.cpp:40] sphere_y_diameter : 0.02 .
+I0213 13:24:26.562177 264029 visualize_path.cpp:46] sphere_z_diameter : 0.02 .
+I0213 13:24:26.562723 264029 path_handler.cpp:14] PathHandler path_handler/lookahead_dist : 1 .
+I0213 13:24:26.563258 264029 path_handler.cpp:20] PathHandler path_handler/use_velocity_scaled_lookahead_dist : 1 .
+I0213 13:24:26.563813 264029 path_handler.cpp:26] PathHandler path_handler/lookahead_time : 1.5 .
+I0213 13:24:26.564286 264029 path_handler.cpp:32] PathHandler path_handler/min_lookahead_dist : 0.5 .
+I0213 13:24:26.564810 264029 path_handler.cpp:38] PathHandler path_handler/max_lookahead_dist : 2 .
+I0213 13:24:26.565002 264029 waypoint_global_planner.cpp:491] Waypoint planner has been initialized
+I0213 13:24:26.938207 264029 reconfigure_client.h:69]  Local_Planner_Reconfigure_Client *5* setDescriptionCallback
+I0213 13:24:26.938988 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = controllers.ymal .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.2 m/s
+ - max_vel_x_backwards = 0.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.3 rad/s
+ - acc_lim_x           = 0.4 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.3 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.1 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:24:48.467976 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:24:48.468022 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v23 pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:24:48.468067 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortA_check pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:24:48.468081 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:24:48.468093 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:24:48.468137 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:24:48.468151 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:24:48.468173 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v23 ---> PortA_check Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:24:48.468590 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:24:48.496532 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:24:48.497119 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:24:48.497146 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:24:48.497207 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.490364,0.719813,-92.0624)
+I0213 13:24:48.497249 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v23 -->-- PortA_check Backward Straight [robot is between source and target]
+W0213 13:24:48.497282 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v23 ---> PortA_check Backward Straight : 2 Move : 0
+I0213 13:24:48.501606 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.642543 Turning radius : 1.55632 m. 
+I0213 13:24:48.501720 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v23(0.4751,0.715,-92) ---> PortA_check(0.48,0.82,-92),Backward Straight,length: 0.105117 m ,speed_CMD: 0.1 m/s ,travel_time: 1.05117 sec.
+I0213 13:24:48.501772 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : -5.69722e-12 m/s . 
+I0213 13:24:48.501803 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:24:48.501977 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:24:50.777552 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v23 ---> PortA_check Result:  3 SUCCEEDED , [0]v23--->PortA_check Goal reached. thread id [140358844126976].
+W0213 13:24:50.777730 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] v23 ---> PortA_check( 0.100098m -0.185659degrees ---> 0.0136018m -0.185659degrees ) [robot is between source and target]
+W0213 13:24:50.777770 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ 0.492032 , 0.813656 , -91.8143 ] 
+W0213 13:24:50.777791 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v23 ---> PortA_check SUCCEEDED , Goal reached.
+I0213 13:25:05.764420 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:25:05.764452 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortA_check pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:25:05.764469 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortA_1_1 pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:25:05.764477 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:25:05.764483 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:25:05.764492 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:25:05.764499 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:25:05.764508 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortA_check ---> PortA_1_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:25:05.764582 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:25:05.790791 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:25:05.791143 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:25:05.791170 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:25:05.791198 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.488453,0.819896,-91.886)
+I0213 13:25:05.791227 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortA_check -->-- PortA_1_1 Backward Straight [robot is between source and target]
+W0213 13:25:05.791229 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortA_check ---> PortA_1_1 Backward Straight : 2 Pick : 1
+I0213 13:25:05.791507 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.0150186 Turning radius : 66.5843 m. 
+I0213 13:25:05.791534 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortA_check(0.48,0.82,-92) ---> PortA_1_1(0.51,1.63,-92),Backward Straight,length: 0.810556 m ,speed_CMD: 0.1 m/s ,travel_time: 8.10556 sec.
+I0213 13:25:05.791558 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 7.33343e-08 m/s . 
+I0213 13:25:05.791568 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:25:05.791625 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:25:05.831460 264116 waypoint_global_planner.cpp:2291] * 4.7 * FeedbackCb PortA_check ---> PortA_1_1 is docking path, change xy and yaw tolerance.
+I0213 13:25:05.831503 264116 teb_reconfigure_client.h:140]  Local_Planner_Reconfigure_Client *3* setPreciseTolerance type =  Backward Straight Precise Tolerance .
+I0213 13:25:05.863286 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  Backward Straight Precise Tolerance .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.04 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:25:14.671494 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortA_check ---> PortA_1_1 Result:  3 SUCCEEDED , [0]PortA_check--->PortA_1_1 Goal reached. thread id [140358844126976].
+W0213 13:25:14.671608 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortA_check ---> PortA_1_1( 0.792839m 0.0505172degrees ---> 0.020746m 0.0505172degrees ) [robot is between source and target]
+W0213 13:25:14.671638 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ 0.498673 , 1.61262 , -92.0505 ] 
+W0213 13:25:14.671650 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortA_check ---> PortA_1_1 SUCCEEDED , Goal reached.
+I0213 13:25:28.241873 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:25:28.241917 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortA_1_1 pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:25:28.241947 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v23 pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:25:28.241959 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:25:28.241966 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:25:28.241988 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:25:28.242002 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:25:28.242015 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortA_1_1 ---> v23 Forward Straight 1.2 m/s, Debug Mode: false
+I0213 13:25:28.242106 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:25:28.267477 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:25:28.267529 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:25:28.267549 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:25:28.267603 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.499222,1.62227,-92.061)
+W0213 13:25:28.267633 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortA_1_1 ---> v23 Forward Straight : 1 Move : 0
+I0213 13:25:28.267635 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortA_1_1 -->-- v23 Forward Straight [robot is between source and target]
+I0213 13:25:28.268097 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.020236 Turning radius : 49.4168 m. 
+I0213 13:25:28.268137 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortA_1_1(0.51,1.63,-92) ---> v23(0.4751,0.715,-92),Forward Straight,length: 0.915667 m ,speed_CMD: 1.2 m/s ,travel_time: 0.763056 sec.
+I0213 13:25:28.268169 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 3.82596e-07 m/s . 
+I0213 13:25:28.268184 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:25:28.268237 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:25:28.307811 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb PortA_1_1 ---> v23 Reduce MaxTheta AccLimTheta (1 / 21)  lookahead_curvature: 0.0631881 , 3.69562e-07 m/s , 0.00592456 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 0.904931 m , angle_difference: 0.0589398 degrees.
+I0213 13:25:28.307853 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:25:28.333420 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+E0213 13:25:29.747887 264116 waypoint_global_planner.cpp:2107] * 4.7 * detectOscillations oscillating !  [0] PortA_1_1 ---> v23 0.194034 m/s , 0.0170515 rad/s ( 0.785733 m ) [robot is between source and target]
+W0213 13:25:33.027806 264115 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortA_1_1 ---> v23 Result:  3 SUCCEEDED , [0]PortA_1_1--->v23 Goal reached. thread id [140358835734272].
+W0213 13:25:33.027874 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortA_1_1 ---> v23( 0.896357m 0.09875degrees ---> 0.0235342m 0.09875degrees ) [robot is between source and target]
+W0213 13:25:33.027901 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ 0.489142 , 0.733886 , -92.0988 ] 
+W0213 13:25:33.027913 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortA_1_1 ---> v23 SUCCEEDED , Goal reached.
+I0213 13:25:59.121940 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 2
+I0213 13:25:59.121976 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v24 pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ 178 degrees ] 
+I0213 13:25:59.121996 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v28 pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:25:59.122007 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:25:59.122016 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:25:59.122030 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ 178 degrees ] 
+I0213 13:25:59.122040 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:25:59.122051 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v24 ---> v28 Forward Straight 0.8 m/s, Debug Mode: false
+I0213 13:25:59.122069 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [1]  Source ID : v28 pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:25:59.122080 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [1]  Target ID : v1 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:25:59.122090 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [1]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:25:59.122099 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [1]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:25:59.122108 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [1]  New Source Goal pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:25:59.122119 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [1]  New Target Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:25:59.122129 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [1]  v28 ---> v1 Forward Straight 0.4 m/s, Debug Mode: false
+I0213 13:25:59.122249 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:25:59.148422 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.8 m/s
+ - max_vel_x_backwards = 0.8 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:25:59.148651 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:25:59.148681 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:25:59.148720 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v24 ---> v28 Forward Straight : 1 Move : 0
+I0213 13:25:59.148716 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.479012,0.656584,176.93)
+W0213 13:25:59.148746 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [1]  v28 ---> v1 Forward Straight : 1 Move : 0
+I0213 13:25:59.148764 264056 waypoint_global_planner.cpp:937] * 6.0 * makePlan [0]  --> v24 ---- v28 Forward Straight [robot is before source]
+I0213 13:25:59.149042 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0831363 Turning radius : 12.0284 m. 
+I0213 13:25:59.149070 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v24(0.479012,0.656584,176.93) ---> v28(-0.6345,0.715,178.375),Forward Straight,length: 1.11512 m ,speed_CMD: 0.8 m/s ,travel_time: 1.3939 sec.
+I0213 13:25:59.149339 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0438085 Turning radius : 22.8266 m. 
+I0213 13:25:59.149379 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [1] v28(-0.6345,0.715,178.375) ---> v1(-2.33,0.74,178.5),Forward Straight,length: 1.69574 m ,speed_CMD: 0.4 m/s ,travel_time: 4.23935 sec.
+I0213 13:25:59.149401 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 0.0089803 m/s . 
+I0213 13:25:59.149413 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (82)
+I0213 13:25:59.149483 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:25:59.189145 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb v24 ---> v28 Reduce MaxTheta AccLimTheta (1 / 82)  lookahead_curvature: -0.0145607 , 0.00793573 m/s , -0.015593 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 1.11715 m , angle_difference: 1.44661 degrees.
+I0213 13:25:59.189220 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:25:59.221983 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.8 m/s
+ - max_vel_x_backwards = 0.8 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:26:02.069021 264116 waypoint_global_planner.cpp:2317] * 4.7 * FeedbackCb [0]v24 ---> v28 Forward Straight : 1 , close to v28
+W0213 13:26:07.029224 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v24 ---> v1 Result:  3 SUCCEEDED , [0]v24--->v28 , [1]v28--->v1 Goal reached. thread id [140358844126976].
+W0213 13:26:07.029640 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [1] v28 ---> v1( 1.688m -0.0279921degrees ---> 0.0154594m 0.0975058degrees ) [robot is between source and target]
+W0213 13:26:07.029676 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.32246 , 0.726503 , 178.402 ] 
+W0213 13:26:07.029690 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v24 ---> v1 SUCCEEDED , Goal reached.
+I0213 13:26:20.370379 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:26:20.370415 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v6 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:20.370438 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortB_check_1 pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:20.370458 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:26:20.370466 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:26:20.370476 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:20.370486 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:20.370494 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v6 ---> PortB_check_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:26:20.370565 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:26:20.397424 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:26:20.397567 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:26:20.397588 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:26:20.397666 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.36658,0.752859,-90.6134)
+W0213 13:26:20.397673 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v6 ---> PortB_check_1 Backward Straight : 2 Move : 0
+I0213 13:26:20.397702 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v6 -->-- PortB_check_1 Backward Straight [robot is between source and target]
+I0213 13:26:20.398093 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 1.37085 Turning radius : 0.729477 m. 
+I0213 13:26:20.398131 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v6(-2.33,0.74,-91.5) ---> PortB_check_1(-2.33,0.85,-91.5),Backward Straight,length: 0.110016 m ,speed_CMD: 0.1 m/s ,travel_time: 1.10016 sec.
+I0213 13:26:20.398155 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : -2.30126e-05 m/s . 
+I0213 13:26:20.398165 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:26:20.398213 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:26:22.557868 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v6 ---> PortB_check_1 Result:  3 SUCCEEDED , [0]v6--->PortB_check_1 Goal reached. thread id [140358844126976].
+W0213 13:26:22.557941 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] v6 ---> PortB_check_1( 0.113289m 0.0214545degrees ---> 0.0377631m 0.0214545degrees ) [robot is between source and target]
+W0213 13:26:22.557968 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.36763 , 0.846856 , -91.5215 ] 
+W0213 13:26:22.557981 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v6 ---> PortB_check_1 SUCCEEDED , Goal reached.
+I0213 13:26:27.133685 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:26:27.133718 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortB_check_1 pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:27.133756 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortB_1_1 pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:27.133765 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:26:27.133771 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:26:27.133782 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:27.133790 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:27.133800 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortB_check_1 ---> PortB_1_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:26:27.133868 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:26:27.164948 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:26:27.164994 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:26:27.165014 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:26:27.165060 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.36708,0.856532,-91.5201)
+I0213 13:26:27.165083 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortB_check_1 -->-- PortB_1_1 Backward Straight [robot is between source and target]
+W0213 13:26:27.165092 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortB_check_1 ---> PortB_1_1 Backward Straight : 2 Drop : 2
+I0213 13:26:27.165380 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.0106174 Turning radius : 94.1851 m. 
+I0213 13:26:27.165409 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortB_check_1(-2.33,0.85,-91.5) ---> PortB_1_1(-2.31,1.66,-91.5),Backward Straight,length: 0.810247 m ,speed_CMD: 0.1 m/s ,travel_time: 8.10247 sec.
+I0213 13:26:27.165427 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 5.49229e-05 m/s . 
+I0213 13:26:27.165436 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:26:27.165473 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:26:27.205336 264116 waypoint_global_planner.cpp:2291] * 4.7 * FeedbackCb PortB_check_1 ---> PortB_1_1 is docking path, change xy and yaw tolerance.
+I0213 13:26:27.205372 264116 teb_reconfigure_client.h:140]  Local_Planner_Reconfigure_Client *3* setPreciseTolerance type =  Backward Straight Precise Tolerance .
+I0213 13:26:27.237334 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  Backward Straight Precise Tolerance .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.04 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:26:36.005270 264115 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortB_check_1 ---> PortB_1_1 Result:  3 SUCCEEDED , [0]PortB_check_1--->PortB_1_1 Goal reached. thread id [140358835734272].
+W0213 13:26:36.005419 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortB_check_1 ---> PortB_1_1( 0.794379m 0.0902441degrees ---> 0.0183002m 0.0902441degrees ) [robot is between source and target]
+W0213 13:26:36.005450 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.31942 , 1.64431 , -91.5902 ] 
+W0213 13:26:36.005467 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortB_check_1 ---> PortB_1_1 SUCCEEDED , Goal reached.
+I0213 13:26:54.348826 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:26:54.348870 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortB_1_1 pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:54.348896 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v6 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:54.348907 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:26:54.348917 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:26:54.348929 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:54.348940 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:26:54.348949 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortB_1_1 ---> v6 Forward Straight 1.2 m/s, Debug Mode: false
+I0213 13:26:54.349030 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:26:54.374672 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:26:54.374812 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:26:54.374832 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:26:54.374866 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.31992,1.65073,-91.6076)
+I0213 13:26:54.374902 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortB_1_1 -->-- v6 Forward Straight [robot is between source and target]
+W0213 13:26:54.374913 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortB_1_1 ---> v6 Forward Straight : 1 Move : 0
+I0213 13:26:54.375169 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0278193 Turning radius : 35.9462 m. 
+I0213 13:26:54.375195 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortB_1_1(-2.31,1.66,-91.5) ---> v6(-2.33,0.74,-91.5),Forward Straight,length: 0.920221 m ,speed_CMD: 1.2 m/s ,travel_time: 0.766851 sec.
+I0213 13:26:54.375218 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 1.79816e-08 m/s . 
+I0213 13:26:54.375228 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:26:54.375268 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:26:54.415314 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb PortB_1_1 ---> v6 Reduce MaxTheta AccLimTheta (1 / 21)  lookahead_curvature: 0.120028 , 1.73996e-08 m/s , 0.00678172 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 0.911823 m , angle_difference: 0.112837 degrees.
+I0213 13:26:54.415387 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:26:54.443989 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+E0213 13:26:55.895116 264116 waypoint_global_planner.cpp:2107] * 4.7 * detectOscillations oscillating !  [0] PortB_1_1 ---> v6 0.205469 m/s , 0.0227807 rad/s ( 0.773691 m ) [robot is between source and target]
+W0213 13:26:59.095077 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortB_1_1 ---> v6 Result:  3 SUCCEEDED , [0]PortB_1_1--->v6 Goal reached. thread id [140358844126976].
+W0213 13:26:59.095201 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortB_1_1 ---> v6( 0.900604m -0.0623832degrees ---> 0.0197034m -0.0623832degrees ) [robot is between source and target]
+W0213 13:26:59.095232 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.32771 , 0.75957 , -91.4376 ] 
+W0213 13:26:59.095244 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortB_1_1 ---> v6 SUCCEEDED , Goal reached.
+I0213 13:27:29.968935 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 2
+I0213 13:27:29.968968 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v1 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:27:29.968987 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v2 pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:27:29.968995 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:27:29.969002 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:27:29.969012 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:27:29.969019 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:27:29.969027 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v1 ---> v2 Forward Straight 0.6 m/s, Debug Mode: false
+I0213 13:27:29.969053 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [1]  Source ID : v2 pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:27:29.969065 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [1]  Target ID : v11 pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ 178 degrees ] 
+I0213 13:27:29.969081 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [1]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:27:29.969089 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [1]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:27:29.969095 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [1]  New Source Goal pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:27:29.969105 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [1]  New Target Goal pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ 178 degrees ] 
+I0213 13:27:29.969115 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [1]  v2 ---> v11 Forward Straight 0.6 m/s, Debug Mode: false
+I0213 13:27:29.969228 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:27:29.997121 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.6 m/s
+ - max_vel_x_backwards = 0.6 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:27:29.997176 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:27:29.997203 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:27:29.997416 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v1 ---> v2 Forward Straight : 1 Move : 0
+I0213 13:27:29.997435 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.33996,0.673924,176.75)
+W0213 13:27:29.997478 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [1]  v2 ---> v11 Forward Straight : 1 Move : 0
+I0213 13:27:29.997506 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v1 -->-- v2 Forward Straight [robot is between source and target]
+I0213 13:27:29.997874 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0884084 Turning radius : 11.3111 m. 
+I0213 13:27:30.002468 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v1(-2.33,0.74,178.5) ---> v2(-3.4582,0.75,178.5),Forward Straight,length: 1.12832 m ,speed_CMD: 0.6 m/s ,travel_time: 1.88053 sec.
+I0213 13:27:30.002753 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.11067 Turning radius : 9.03587 m. 
+I0213 13:27:30.002787 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [1] v2(-3.4582,0.75,178.5) ---> v11(-5.3559,0.736,178),Forward Straight,length: 1.89834 m ,speed_CMD: 0.6 m/s ,travel_time: 3.1639 sec.
+I0213 13:27:30.002815 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 0.00816005 m/s . 
+I0213 13:27:30.002827 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (82)
+I0213 13:27:30.002898 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:27:30.517663 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb v1 ---> v2 Reduce MaxTheta AccLimTheta (1 / 82)  lookahead_curvature: -0.297658 , 0.0686555 m/s , -0.0400574 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 1.10723 m , angle_difference: 2.56288 degrees.
+I0213 13:27:30.517707 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:27:30.549683 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.6 m/s
+ - max_vel_x_backwards = 0.6 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:27:32.957716 264116 waypoint_global_planner.cpp:2317] * 4.7 * FeedbackCb [0]v1 ---> v2 Forward Straight : 1 , close to v2
+W0213 13:27:38.477857 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v1 ---> v11 Result:  3 SUCCEEDED , [0]v1--->v2 , [1]v2--->v11 Goal reached. thread id [140358844126976].
+W0213 13:27:38.477934 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [1] v2 ---> v11( 1.88411m 0.463221degrees ---> 0.015149m -0.0367897degrees ) [robot is between source and target]
+W0213 13:27:38.477962 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.3422 , 0.729541 , 178.037 ] 
+W0213 13:27:38.477974 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v1 ---> v11 SUCCEEDED , Goal reached.
+I0213 13:27:51.370479 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:27:51.370508 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v10 pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:27:51.370523 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortC_check pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:27:51.370532 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:27:51.370537 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:27:51.370545 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:27:51.370555 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:27:51.370568 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v10 ---> PortC_check Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:27:51.370653 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:27:51.399289 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:27:51.399477 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:27:51.399497 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:27:51.399560 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v10 ---> PortC_check Backward Straight : 2 Move : 0
+I0213 13:27:51.399578 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-5.36416,0.752061,-90.2662)
+I0213 13:27:51.399610 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v10 -->-- PortC_check Backward Straight [robot is between source and target]
+I0213 13:27:51.399911 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.166568 Turning radius : 6.00354 m. 
+I0213 13:27:51.399942 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v10(-5.3559,0.736,-92) ---> PortC_check(-5.3471,0.95,-92),Backward Straight,length: 0.214183 m ,speed_CMD: 0.1 m/s ,travel_time: 2.14183 sec.
+I0213 13:27:51.399966 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : -2.55036e-05 m/s . 
+I0213 13:27:51.399978 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:27:51.400023 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:27:54.919755 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v10 ---> PortC_check Result:  3 SUCCEEDED , [0]v10--->PortC_check Goal reached. thread id [140358844126976].
+W0213 13:27:54.919811 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] v10 ---> PortC_check( 0.209612m -0.0264525degrees ---> 0.0168911m -0.0264525degrees ) [robot is between source and target]
+W0213 13:27:54.919838 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.36337 , 0.945479 , -91.9736 ] 
+W0213 13:27:54.919852 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v10 ---> PortC_check SUCCEEDED , Goal reached.
+I0213 13:28:11.343843 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:28:11.343883 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortC_check pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:28:11.343905 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortC_1_1 pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:28:11.343919 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:28:11.343928 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:28:11.343942 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:28:11.343958 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:28:11.343971 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortC_check ---> PortC_1_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:28:11.344056 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:28:11.369012 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:28:11.369166 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:28:11.369186 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:28:11.369237 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-5.36118,0.954801,-91.9609)
+I0213 13:28:11.369282 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortC_check -->-- PortC_1_1 Backward Straight [robot is between source and target]
+W0213 13:28:11.369285 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortC_check ---> PortC_1_1 Backward Straight : 2 Pick : 1
+I0213 13:28:11.369608 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.266716 Turning radius : 3.74931 m. 
+I0213 13:28:11.369645 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortC_check(-5.3471,0.95,-92) ---> PortC_1_1(-5.291,1.735,-92),Backward Straight,length: 0.787224 m ,speed_CMD: 0.1 m/s ,travel_time: 7.87224 sec.
+I0213 13:28:11.369674 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 3.58089e-08 m/s . 
+I0213 13:28:11.369688 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:28:11.369740 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:28:11.409858 264116 waypoint_global_planner.cpp:2291] * 4.7 * FeedbackCb PortC_check ---> PortC_1_1 is docking path, change xy and yaw tolerance.
+I0213 13:28:11.410003 264116 teb_reconfigure_client.h:140]  Local_Planner_Reconfigure_Client *3* setPreciseTolerance type =  Backward Straight Precise Tolerance .
+I0213 13:28:11.438789 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  Backward Straight Precise Tolerance .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.04 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:28:19.889513 264115 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortC_check ---> PortC_1_1 Result:  3 SUCCEEDED , [0]PortC_check--->PortC_1_1 Goal reached. thread id [140358835734272].
+W0213 13:28:19.889605 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortC_check ---> PortC_1_1( 0.76896m 0.395082degrees ---> 0.032143m 0.395082degrees ) [robot is between source and target]
+W0213 13:28:19.889638 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.31854 , 1.71843 , -92.3951 ] 
+W0213 13:28:19.889655 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortC_check ---> PortC_1_1 SUCCEEDED , Goal reached.
+I0213 13:28:33.647292 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:28:33.647321 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortC_1_1 pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:28:33.647338 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v10 pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:28:33.647346 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:28:33.647353 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:28:33.647363 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:28:33.647372 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:28:33.647378 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortC_1_1 ---> v10 Forward Straight 1.2 m/s, Debug Mode: false
+I0213 13:28:33.647459 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:28:33.671586 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:28:33.671713 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:28:33.671732 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:28:33.671794 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-5.32203,1.73509,-92.264)
+W0213 13:28:33.671800 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortC_1_1 ---> v10 Forward Straight : 1 Move : 0
+I0213 13:28:33.671820 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortC_1_1 -->-- v10 Forward Straight [robot is between source and target]
+I0213 13:28:33.672101 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.172437 Turning radius : 5.79922 m. 
+I0213 13:28:33.672128 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortC_1_1(-5.291,1.735,-92) ---> v10(-5.3559,0.736,-92),Forward Straight,length: 1.0013 m ,speed_CMD: 1.2 m/s ,travel_time: 0.834414 sec.
+I0213 13:28:33.672147 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 3.14969e-07 m/s . 
+I0213 13:28:33.672155 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:28:33.672194 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:28:33.712013 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb PortC_1_1 ---> v10 Reduce MaxTheta AccLimTheta (1 / 21)  lookahead_curvature: 0.134014 , 3.15982e-07 m/s , 0.00699146 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 0.999136 m , angle_difference: 0.291359 degrees.
+I0213 13:28:33.712049 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:28:33.736856 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+E0213 13:28:35.272063 264116 waypoint_global_planner.cpp:2107] * 4.7 * detectOscillations oscillating !  [0] PortC_1_1 ---> v10 0.209399 m/s , 0.0132711 rad/s ( 0.850893 m ) [robot is between source and target]
+W0213 13:28:38.672027 264115 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortC_1_1 ---> v10 Result:  3 SUCCEEDED , [0]PortC_1_1--->v10 Goal reached. thread id [140358835734272].
+W0213 13:28:38.672094 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortC_1_1 ---> v10( 0.986841m 0.176608degrees ---> 0.0260108m 0.176608degrees ) [robot is between source and target]
+W0213 13:28:38.672130 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.33341 , 0.749071 , -92.1766 ] 
+W0213 13:28:38.672156 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortC_1_1 ---> v10 SUCCEEDED , Goal reached.
+I0213 13:29:04.482401 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:29:04.482436 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v12 pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -2 degrees ] 
+I0213 13:29:04.482455 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v25 pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -2 degrees ] 
+I0213 13:29:04.482465 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:29:04.482473 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:29:04.482484 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -2 degrees ] 
+I0213 13:29:04.482502 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -2 degrees ] 
+I0213 13:29:04.482512 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v12 ---> v25 Forward Straight 1.2 m/s, Debug Mode: false
+I0213 13:29:04.482590 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:29:04.509354 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:29:04.509575 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:29:04.509598 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:29:04.509655 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-5.38903,0.711513,-0.651111)
+W0213 13:29:04.509660 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v12 ---> v25 Forward Straight : 1 Move : 0
+I0213 13:29:04.509680 264056 waypoint_global_planner.cpp:937] * 6.0 * makePlan [0]  --> v12 ---- v25 Forward Straight [robot is before source]
+I0213 13:29:04.509979 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0194451 Turning radius : 51.4269 m. 
+I0213 13:29:04.510113 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v12(-5.38903,0.711513,-0.651111) ---> v25(0.4751,0.715,-2),Forward Straight,length: 5.86503 m ,speed_CMD: 1.2 m/s ,travel_time: 4.88752 sec.
+I0213 13:29:04.510166 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 0.0068463 m/s . 
+I0213 13:29:04.510190 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (261)
+I0213 13:29:04.510339 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:29:04.550006 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb v12 ---> v25 Reduce MaxTheta AccLimTheta (1 / 261)  lookahead_curvature: 0.00570111 , 0.00736135 m/s , 0.0408324 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 5.86219 m , angle_difference: -1.35257 degrees.
+I0213 13:29:04.550045 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:29:04.585378 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:29:17.469934 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v12 ---> v25 Result:  3 SUCCEEDED , [0]v12--->v25 Goal reached. thread id [140358844126976].
+W0213 13:29:17.470039 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] v12 ---> v25( 5.82516m -0.0498032degrees ---> 0.00596826m -0.0498032degrees ) [robot is between source and target]
+W0213 13:29:17.470068 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ 0.469228 , 0.71607 , -1.9502 ] 
+W0213 13:29:17.470082 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v12 ---> v25 SUCCEEDED , Goal reached.
+I0213 13:29:30.560587 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:29:30.560622 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v23 pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:29:30.560657 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortA_check pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:29:30.560667 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:29:30.560672 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:29:30.560683 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:29:30.560693 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:29:30.560703 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v23 ---> PortA_check Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:29:30.560775 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:29:30.587905 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:29:30.588055 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:29:30.588076 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:29:30.588143 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v23 ---> PortA_check Backward Straight : 2 Move : 0
+I0213 13:29:30.588151 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.548733,0.720738,-93.3505)
+I0213 13:29:30.588191 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v23 -->-- PortA_check Backward Straight [robot is between source and target]
+I0213 13:29:30.588596 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.642543 Turning radius : 1.55632 m. 
+I0213 13:29:30.588634 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v23(0.4751,0.715,-92) ---> PortA_check(0.48,0.82,-92),Backward Straight,length: 0.105117 m ,speed_CMD: 0.1 m/s ,travel_time: 1.05117 sec.
+I0213 13:29:30.588654 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : -1.23996e-05 m/s . 
+I0213 13:29:30.588665 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:29:30.588708 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:29:32.668340 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v23 ---> PortA_check Result:  3 SUCCEEDED , [0]v23--->PortA_check Goal reached. thread id [140358844126976].
+W0213 13:29:32.668424 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] v23 ---> PortA_check( 0.124935m -0.583439degrees ---> 0.0678822m -0.583439degrees ) [robot is between source and target]
+W0213 13:29:32.668454 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ 0.547797 , 0.816606 , -91.4166 ] 
+W0213 13:29:32.668471 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v23 ---> PortA_check SUCCEEDED , Goal reached.
+I0213 13:29:37.414983 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:29:37.415014 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortA_check pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:29:37.415028 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortA_1_1 pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:29:37.415035 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:29:37.415042 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:29:37.415050 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.48 ]  , y [ 0.82 ]  , yaw [ -92 degrees ] 
+I0213 13:29:37.415058 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:29:37.415066 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortA_check ---> PortA_1_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:29:37.415132 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:29:37.444707 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:29:37.444847 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:29:37.444869 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:29:37.444931 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortA_check ---> PortA_1_1 Backward Straight : 2 Drop : 2
+I0213 13:29:37.444933 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.547172,0.827382,-91.6631)
+I0213 13:29:37.445043 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortA_check -->-- PortA_1_1 Backward Straight [robot is between source and target]
+I0213 13:29:37.445473 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.0150186 Turning radius : 66.5843 m. 
+I0213 13:29:37.445508 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortA_check(0.48,0.82,-92) ---> PortA_1_1(0.51,1.63,-92),Backward Straight,length: 0.810556 m ,speed_CMD: 0.1 m/s ,travel_time: 8.10556 sec.
+I0213 13:29:37.445531 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 4.9834e-05 m/s . 
+I0213 13:29:37.445542 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:29:37.445588 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:29:37.485210 264116 waypoint_global_planner.cpp:2291] * 4.7 * FeedbackCb PortA_check ---> PortA_1_1 is docking path, change xy and yaw tolerance.
+I0213 13:29:37.485245 264116 teb_reconfigure_client.h:140]  Local_Planner_Reconfigure_Client *3* setPreciseTolerance type =  Backward Straight Precise Tolerance .
+I0213 13:29:37.518954 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  Backward Straight Precise Tolerance .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.04 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:29:46.125280 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortA_check ---> PortA_1_1 Result:  3 SUCCEEDED , [0]PortA_check--->PortA_1_1 Goal reached. thread id [140358844126976].
+W0213 13:29:46.125468 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortA_check ---> PortA_1_1( 0.791178m -0.330845degrees ---> 0.019712m -0.330845degrees ) [robot is between source and target]
+W0213 13:29:46.125500 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ 0.505714 , 1.61076 , -91.6692 ] 
+W0213 13:29:46.125516 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortA_check ---> PortA_1_1 SUCCEEDED , Goal reached.
+I0213 13:30:04.468132 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:30:04.468164 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortA_1_1 pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:30:04.468183 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v23 pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:30:04.468194 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:30:04.468204 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:30:04.468215 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.51 ]  , y [ 1.63 ]  , yaw [ -92 degrees ] 
+I0213 13:30:04.468225 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ -92 degrees ] 
+I0213 13:30:04.468235 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortA_1_1 ---> v23 Forward Straight 1.2 m/s, Debug Mode: false
+I0213 13:30:04.468310 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:30:04.493227 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:30:04.493474 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:30:04.493507 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:30:04.493577 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortA_1_1 ---> v23 Forward Straight : 1 Move : 0
+I0213 13:30:04.493587 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.506844,1.61697,-91.7602)
+I0213 13:30:04.493634 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortA_1_1 -->-- v23 Forward Straight [robot is between source and target]
+I0213 13:30:04.493921 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.020236 Turning radius : 49.4168 m. 
+I0213 13:30:04.493952 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortA_1_1(0.51,1.63,-92) ---> v23(0.4751,0.715,-92),Forward Straight,length: 0.915667 m ,speed_CMD: 1.2 m/s ,travel_time: 0.763056 sec.
+I0213 13:30:04.493971 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 1.56662e-08 m/s . 
+I0213 13:30:04.493980 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:30:04.494033 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:30:04.533856 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb PortA_1_1 ---> v23 Reduce MaxTheta AccLimTheta (1 / 21)  lookahead_curvature: -0.00128428 , 1.51427e-08 m/s , 0.00663588 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 0.902338 m , angle_difference: -0.234846 degrees.
+I0213 13:30:04.533903 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:30:04.560539 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+E0213 13:30:06.053803 264116 waypoint_global_planner.cpp:2107] * 4.7 * detectOscillations oscillating !  [0] PortA_1_1 ---> v23 0.202978 m/s , 0.00474621 rad/s ( 0.763224 m ) [robot is between source and target]
+W0213 13:30:09.213851 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortA_1_1 ---> v23 Result:  3 SUCCEEDED , [0]PortA_1_1--->v23 Goal reached. thread id [140358844126976].
+W0213 13:30:09.214012 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortA_1_1 ---> v23( 0.898271m 0.108571degrees ---> 0.0209821m 0.108571degrees ) [robot is between source and target]
+W0213 13:30:09.214053 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ 0.487379 , 0.732014 , -92.1086 ] 
+W0213 13:30:09.214074 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortA_1_1 ---> v23 SUCCEEDED , Goal reached.
+I0213 13:31:30.569018 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 2
+I0213 13:31:30.569088 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v24 pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ 178 degrees ] 
+I0213 13:31:30.569113 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v28 pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:31:30.569121 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:31:30.569129 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:31:30.569141 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ 0.4751 ]  , y [ 0.715 ]  , yaw [ 178 degrees ] 
+I0213 13:31:30.569150 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:31:30.569157 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v24 ---> v28 Forward Straight 0.8 m/s, Debug Mode: false
+I0213 13:31:30.569175 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [1]  Source ID : v28 pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:31:30.569183 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [1]  Target ID : v1 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:31:30.569190 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [1]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:31:30.569196 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [1]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:31:30.569202 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [1]  New Source Goal pose :  x [ -0.6345 ]  , y [ 0.715 ]  , yaw [ 178.375 degrees ] 
+I0213 13:31:30.569211 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [1]  New Target Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:31:30.569216 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [1]  v28 ---> v1 Forward Straight 0.4 m/s, Debug Mode: false
+I0213 13:31:30.569307 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:31:30.593484 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.8 m/s
+ - max_vel_x_backwards = 0.8 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:31:30.593541 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:31:30.593560 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:31:30.593617 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v24 ---> v28 Forward Straight : 1 Move : 0
+I0213 13:31:30.593624 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (0.478765,0.658861,176.781)
+W0213 13:31:30.593649 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [1]  v28 ---> v1 Forward Straight : 1 Move : 0
+I0213 13:31:30.593664 264056 waypoint_global_planner.cpp:937] * 6.0 * makePlan [0]  --> v24 ---- v28 Forward Straight [robot is before source]
+I0213 13:31:30.593933 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0690009 Turning radius : 14.4926 m. 
+I0213 13:31:30.593959 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v24(0.478765,0.658861,176.781) ---> v28(-0.6345,0.715,178.375),Forward Straight,length: 1.11475 m ,speed_CMD: 0.8 m/s ,travel_time: 1.39343 sec.
+I0213 13:31:30.594206 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0438085 Turning radius : 22.8266 m. 
+I0213 13:31:30.594236 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [1] v28(-0.6345,0.715,178.375) ---> v1(-2.33,0.74,178.5),Forward Straight,length: 1.69574 m ,speed_CMD: 0.4 m/s ,travel_time: 4.23935 sec.
+I0213 13:31:30.594255 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 0.00806015 m/s . 
+I0213 13:31:30.594265 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (82)
+I0213 13:31:30.594327 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:31:30.634008 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb v24 ---> v28 Reduce MaxTheta AccLimTheta (1 / 82)  lookahead_curvature: -0.0161254 , 0.00636634 m/s , -0.00919601 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 1.11146 m , angle_difference: 1.54111 degrees.
+I0213 13:31:30.634109 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:31:30.664183 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.8 m/s
+ - max_vel_x_backwards = 0.8 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:31:33.473879 264116 waypoint_global_planner.cpp:2317] * 4.7 * FeedbackCb [0]v24 ---> v28 Forward Straight : 1 , close to v28
+W0213 13:31:38.393860 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v24 ---> v1 Result:  3 SUCCEEDED , [0]v24--->v28 , [1]v28--->v1 Goal reached. thread id [140358844126976].
+W0213 13:31:38.393950 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [1] v28 ---> v1( 1.68665m -0.0115779degrees ---> 0.0184845m 0.11392degrees ) [robot is between source and target]
+W0213 13:31:38.393980 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.32112 , 0.723786 , 178.386 ] 
+W0213 13:31:38.393994 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v24 ---> v1 SUCCEEDED , Goal reached.
+I0213 13:31:51.771597 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:31:51.771633 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v6 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:31:51.771656 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortB_check_1 pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:31:51.771667 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:31:51.771677 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:31:51.771687 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:31:51.771695 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:31:51.771716 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v6 ---> PortB_check_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:31:51.771821 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:31:51.801241 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:31:51.801426 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:31:51.801448 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:31:51.801497 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.36273,0.751033,-90.6699)
+I0213 13:31:51.801517 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v6 -->-- PortB_check_1 Backward Straight [robot is between source and target]
+W0213 13:31:51.801529 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v6 ---> PortB_check_1 Backward Straight : 2 Move : 0
+I0213 13:31:51.801795 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 1.37085 Turning radius : 0.729477 m. 
+I0213 13:31:51.801821 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v6(-2.33,0.74,-91.5) ---> PortB_check_1(-2.33,0.85,-91.5),Backward Straight,length: 0.110016 m ,speed_CMD: 0.1 m/s ,travel_time: 1.10016 sec.
+I0213 13:31:51.801841 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : -2.31965e-05 m/s . 
+I0213 13:31:51.801851 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:31:51.801892 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:31:53.881702 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v6 ---> PortB_check_1 Result:  3 SUCCEEDED , [0]v6--->PortB_check_1 Goal reached. thread id [140358844126976].
+W0213 13:31:53.881803 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] v6 ---> PortB_check_1( 0.110833m -0.0261837degrees ---> 0.0334755m -0.0261837degrees ) [robot is between source and target]
+W0213 13:31:53.881834 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.3632 , 0.845743 , -91.4738 ] 
+W0213 13:31:53.881848 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v6 ---> PortB_check_1 SUCCEEDED , Goal reached.
+I0213 13:32:10.044936 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:32:10.044966 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortB_check_1 pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:10.044982 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortB_1_1 pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:10.044991 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:32:10.044996 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:32:10.045006 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.33 ]  , y [ 0.85 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:10.045020 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:10.045028 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortB_check_1 ---> PortB_1_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:32:10.045089 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:32:10.071602 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:32:10.071770 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:32:10.071795 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:32:10.071820 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.36402,0.856279,-91.503)
+I0213 13:32:10.071846 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortB_check_1 -->-- PortB_1_1 Backward Straight [robot is between source and target]
+W0213 13:32:10.071852 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortB_check_1 ---> PortB_1_1 Backward Straight : 2 Pick : 1
+I0213 13:32:10.072154 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.0106174 Turning radius : 94.1851 m. 
+I0213 13:32:10.072188 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortB_check_1(-2.33,0.85,-91.5) ---> PortB_1_1(-2.31,1.66,-91.5),Backward Straight,length: 0.810247 m ,speed_CMD: 0.1 m/s ,travel_time: 8.10247 sec.
+I0213 13:32:10.072209 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 3.81231e-08 m/s . 
+I0213 13:32:10.072222 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:32:10.072263 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:32:10.112041 264116 waypoint_global_planner.cpp:2291] * 4.7 * FeedbackCb PortB_check_1 ---> PortB_1_1 is docking path, change xy and yaw tolerance.
+I0213 13:32:10.112071 264116 teb_reconfigure_client.h:140]  Local_Planner_Reconfigure_Client *3* setPreciseTolerance type =  Backward Straight Precise Tolerance .
+I0213 13:32:10.140056 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  Backward Straight Precise Tolerance .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.04 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:32:18.911993 264115 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortB_check_1 ---> PortB_1_1 Result:  3 SUCCEEDED , [0]PortB_check_1--->PortB_1_1 Goal reached. thread id [140358835734272].
+W0213 13:32:18.912117 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortB_check_1 ---> PortB_1_1( 0.791481m 0.104136degrees ---> 0.0196073m 0.104136degrees ) [robot is between source and target]
+W0213 13:32:18.912154 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.31608 , 1.64136 , -91.6041 ] 
+W0213 13:32:18.912194 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortB_check_1 ---> PortB_1_1 SUCCEEDED , Goal reached.
+I0213 13:32:32.546149 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:32:32.546175 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortB_1_1 pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:32.546190 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v6 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:32.546196 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:32:32.546202 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:32:32.546211 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.31 ]  , y [ 1.66 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:32.546218 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ -91.5 degrees ] 
+I0213 13:32:32.546224 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortB_1_1 ---> v6 Forward Straight 1.2 m/s, Debug Mode: false
+I0213 13:32:32.546288 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:32:32.572158 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:32:32.572304 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:32:32.572324 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:32:32.572360 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.31656,1.6498,-91.6382)
+W0213 13:32:32.572386 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortB_1_1 ---> v6 Forward Straight : 1 Move : 0
+I0213 13:32:32.572387 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortB_1_1 -->-- v6 Forward Straight [robot is between source and target]
+I0213 13:32:32.572683 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0278193 Turning radius : 35.9462 m. 
+I0213 13:32:32.572713 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortB_1_1(-2.31,1.66,-91.5) ---> v6(-2.33,0.74,-91.5),Forward Straight,length: 0.920221 m ,speed_CMD: 1.2 m/s ,travel_time: 0.766851 sec.
+I0213 13:32:32.572734 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 3.83809e-07 m/s . 
+I0213 13:32:32.572743 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:32:32.572782 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:32:32.612663 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb PortB_1_1 ---> v6 Reduce MaxTheta AccLimTheta (1 / 21)  lookahead_curvature: 0.088531 , 3.82252e-07 m/s , 0.00664786 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 0.908201 m , angle_difference: 0.147376 degrees.
+I0213 13:32:32.612759 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:32:32.641125 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+E0213 13:32:34.172638 264116 waypoint_global_planner.cpp:2107] * 4.7 * detectOscillations oscillating !  [0] PortB_1_1 ---> v6 0.221981 m/s , 0.020193 rad/s ( 0.75361 m ) [robot is between source and target]
+W0213 13:32:37.292589 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortB_1_1 ---> v6 Result:  3 SUCCEEDED , [0]PortB_1_1--->v6 Goal reached. thread id [140358844126976].
+W0213 13:32:37.292722 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortB_1_1 ---> v6( 0.901352m -0.0528871degrees ---> 0.019704m -0.0528871degrees ) [robot is between source and target]
+W0213 13:32:37.292755 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -2.32396 , 0.758756 , -91.4471 ] 
+W0213 13:32:37.292768 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortB_1_1 ---> v6 SUCCEEDED , Goal reached.
+I0213 13:34:19.068022 264114 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 2
+I0213 13:34:19.068059 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v1 pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:34:19.068076 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v2 pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:34:19.068085 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:34:19.068091 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:34:19.068104 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -2.33 ]  , y [ 0.74 ]  , yaw [ 178.5 degrees ] 
+I0213 13:34:19.068111 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:34:19.068118 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v1 ---> v2 Forward Straight 0.6 m/s, Debug Mode: false
+I0213 13:34:19.068135 264114 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [1]  Source ID : v2 pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:34:19.068142 264114 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [1]  Target ID : v11 pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ 178 degrees ] 
+I0213 13:34:19.068149 264114 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [1]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:34:19.068156 264114 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [1]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:34:19.068166 264114 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [1]  New Source Goal pose :  x [ -3.4582 ]  , y [ 0.75 ]  , yaw [ 178.5 degrees ] 
+I0213 13:34:19.068173 264114 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [1]  New Target Goal pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ 178 degrees ] 
+I0213 13:34:19.068181 264114 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [1]  v2 ---> v11 Forward Straight 0.6 m/s, Debug Mode: false
+I0213 13:34:19.068269 264114 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:34:19.094806 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.6 m/s
+ - max_vel_x_backwards = 0.6 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:34:19.094964 264114 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:34:19.094985 264114 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:34:19.095052 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v1 ---> v2 Forward Straight : 1 Move : 0
+I0213 13:34:19.095058 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-2.33879,0.674588,176.837)
+W0213 13:34:19.095082 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [1]  v2 ---> v11 Forward Straight : 1 Move : 0
+I0213 13:34:19.095104 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v1 -->-- v2 Forward Straight [robot is between source and target]
+I0213 13:34:19.095393 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.0884084 Turning radius : 11.3111 m. 
+I0213 13:34:19.095425 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v1(-2.33,0.74,178.5) ---> v2(-3.4582,0.75,178.5),Forward Straight,length: 1.12832 m ,speed_CMD: 0.6 m/s ,travel_time: 1.88053 sec.
+I0213 13:34:19.095702 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.11067 Turning radius : 9.03587 m. 
+I0213 13:34:19.095739 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [1] v2(-3.4582,0.75,178.5) ---> v11(-5.3559,0.736,178),Forward Straight,length: 1.89834 m ,speed_CMD: 0.6 m/s ,travel_time: 3.1639 sec.
+I0213 13:34:19.095764 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 0.00773085 m/s . 
+I0213 13:34:19.095780 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (82)
+I0213 13:34:19.095853 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:34:19.695500 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb v1 ---> v2 Reduce MaxTheta AccLimTheta (2 / 82)  lookahead_curvature: -0.283818 , 0.0877382 m/s , -0.0393219 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 1.09825 m , angle_difference: 2.60684 degrees.
+I0213 13:34:19.695546 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:34:19.724809 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.6 m/s
+ - max_vel_x_backwards = 0.6 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:34:22.055346 264116 waypoint_global_planner.cpp:2317] * 4.7 * FeedbackCb [0]v1 ---> v2 Forward Straight : 1 , close to v2
+W0213 13:34:27.615272 264115 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v1 ---> v11 Result:  3 SUCCEEDED , [0]v1--->v2 , [1]v2--->v11 Goal reached. thread id [140358835734272].
+W0213 13:34:27.615350 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [1] v2 ---> v11( 1.88707m 0.455606degrees ---> 0.0117251m -0.044405degrees ) [robot is between source and target]
+W0213 13:34:27.615379 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.34518 , 0.731258 , 178.044 ] 
+W0213 13:34:27.615393 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v1 ---> v11 SUCCEEDED , Goal reached.
+I0213 13:34:40.779417 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:34:40.779458 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : v10 pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:34:40.779484 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortC_check pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:34:40.779491 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:34:40.779498 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:34:40.779510 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:34:40.779517 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:34:40.779526 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  v10 ---> PortC_check Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:34:40.779629 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:34:40.810571 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:34:40.810724 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:34:40.810743 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:34:40.810804 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-5.35971,0.750462,-90.1886)
+W0213 13:34:40.810809 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  v10 ---> PortC_check Backward Straight : 2 Move : 0
+I0213 13:34:40.810839 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  v10 -->-- PortC_check Backward Straight [robot is between source and target]
+I0213 13:34:40.811154 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.166568 Turning radius : 6.00354 m. 
+I0213 13:34:40.811184 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] v10(-5.3559,0.736,-92) ---> PortC_check(-5.3471,0.95,-92),Backward Straight,length: 0.214183 m ,speed_CMD: 0.1 m/s ,travel_time: 2.14183 sec.
+I0213 13:34:40.811204 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : -2.04785e-05 m/s . 
+I0213 13:34:40.811213 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:34:40.811257 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:34:44.291070 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback v10 ---> PortC_check Result:  3 SUCCEEDED , [0]v10--->PortC_check Goal reached. thread id [140358844126976].
+W0213 13:34:44.291198 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] v10 ---> PortC_check( 0.214101m -0.0208222degrees ---> 0.014464m -0.0208222degrees ) [robot is between source and target]
+W0213 13:34:44.291229 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.36156 , 0.950026 , -91.9792 ] 
+W0213 13:34:44.291241 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb v10 ---> PortC_check SUCCEEDED , Goal reached.
+I0213 13:34:48.842947 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:34:48.842976 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortC_check pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:34:48.842993 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : PortC_1_1 pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:34:48.843000 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:34:48.843007 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:34:48.843016 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -5.3471 ]  , y [ 0.95 ]  , yaw [ -92 degrees ] 
+I0213 13:34:48.843024 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:34:48.843032 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortC_check ---> PortC_1_1 Backward Straight 0.1 m/s, Debug Mode: false
+I0213 13:34:48.843106 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Backward Straight .
+I0213 13:34:48.869846 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Backward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.1 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:34:48.869956 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:34:48.869977 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+I0213 13:34:48.870005 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-5.36233,0.957599,-92.0166)
+W0213 13:34:48.870028 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortC_check ---> PortC_1_1 Backward Straight : 2 Drop : 2
+I0213 13:34:48.870031 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortC_check -->-- PortC_1_1 Backward Straight [robot is between source and target]
+I0213 13:34:48.870347 264056 path_generator.cpp:142] BackwardStraightPath InverseBasierCurve Max Curvature = 0.266716 Turning radius : 3.74931 m. 
+I0213 13:34:48.870375 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortC_check(-5.3471,0.95,-92) ---> PortC_1_1(-5.291,1.735,-92),Backward Straight,length: 0.787224 m ,speed_CMD: 0.1 m/s ,travel_time: 7.87224 sec.
+I0213 13:34:48.870402 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 6.4999e-05 m/s . 
+I0213 13:34:48.870424 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:34:48.870468 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:34:48.910326 264116 waypoint_global_planner.cpp:2291] * 4.7 * FeedbackCb PortC_check ---> PortC_1_1 is docking path, change xy and yaw tolerance.
+I0213 13:34:48.910355 264116 teb_reconfigure_client.h:140]  Local_Planner_Reconfigure_Client *3* setPreciseTolerance type =  Backward Straight Precise Tolerance .
+I0213 13:34:48.939230 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  Backward Straight Precise Tolerance .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 0.1 m/s
+ - max_vel_x_backwards = 0.1 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.8 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.04 m
+ - yaw_goal_tolerance  = 0.07 rad
+ - weight_acc_lim_x = 30 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+W0213 13:34:57.310252 264114 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortC_check ---> PortC_1_1 Result:  3 SUCCEEDED , [0]PortC_check--->PortC_1_1 Goal reached. thread id [140358844126976].
+W0213 13:34:57.310351 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortC_check ---> PortC_1_1( 0.770222m 0.440339degrees ---> 0.030211m 0.440339degrees ) [robot is between source and target]
+W0213 13:34:57.310379 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.31701 , 1.71963 , -92.4403 ] 
+W0213 13:34:57.310390 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortC_check ---> PortC_1_1 SUCCEEDED , Goal reached.
+I0213 13:35:15.660593 264115 waypoint_global_planner.cpp:629] * 0 * SetVehicleControlArrayCMD VehicleControl msg_array size is : 1
+I0213 13:35:15.660624 264115 waypoint_global_planner.cpp:546] * 1.1 * SetVehicleControlCMD [0]  Source ID : PortC_1_1 pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:35:15.660641 264115 waypoint_global_planner.cpp:551] * 1.2 * SetVehicleControlCMD [0]  Target ID : v10 pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:35:15.660650 264115 waypoint_global_planner.cpp:562] * 1.3 * SetVehicleControlCMD [0]  Use Offset, source_offset_x_m : 0 source_offset_y_m : 0 source_offset_yaw_degree :0
+I0213 13:35:15.660656 264115 waypoint_global_planner.cpp:568] * 1.3 * SetVehicleControlCMD [0]  Use Offset, target_offset_x_m : 0 target_offset_y_m : 0 target_offset_yaw_degree :0
+I0213 13:35:15.660665 264115 waypoint_global_planner.cpp:586] * 1.4 * SetVehicleControlCMD [0]  New Source Goal pose :  x [ -5.291 ]  , y [ 1.735 ]  , yaw [ -92 degrees ] 
+I0213 13:35:15.660673 264115 waypoint_global_planner.cpp:600] * 1.4 * SetVehicleControlCMD [0]  New Target Goal pose :  x [ -5.3559 ]  , y [ 0.736 ]  , yaw [ -92 degrees ] 
+I0213 13:35:15.660681 264115 waypoint_global_planner.cpp:614] * 1.5 * SetVehicleControlCMD [0]  PortC_1_1 ---> v10 Forward Straight 1.2 m/s, Debug Mode: false
+I0213 13:35:15.660749 264115 teb_reconfigure_client.h:66]  Local_Planner_Reconfigure_Client *3* setTebParameters type = LindeR16 Forward Straight .
+I0213 13:35:15.687244 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type = LindeR16 Forward Straight .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+I0213 13:35:15.687338 264115 waypoint_global_planner.cpp:723] * 4.5 * sendGoal() VehicleControlArrayCallback Simple Client Goal State : PENDING
+I0213 13:35:15.687364 264115 waypoint_global_planner.cpp:728] * 4.5 * sendGoal() VehicleControlArrayCallback is_make_plan_needed: true
+W0213 13:35:15.687430 264116 waypoint_global_planner.cpp:1754] * 4.6 * ActiveCb [0]  PortC_1_1 ---> v10 Forward Straight : 1 Move : 0
+I0213 13:35:15.687441 264056 waypoint_global_planner.cpp:912] * 5 * makePlan Robot Pose : (-5.3167,1.73324,-92.2249)
+I0213 13:35:15.687479 264056 waypoint_global_planner.cpp:941] * 6.0 * makePlan [0]  PortC_1_1 -->-- v10 Forward Straight [robot is between source and target]
+I0213 13:35:15.687767 264056 path_generator.cpp:76] ForwardStraightPath BasierCurve Max Curvature = 0.172437 Turning radius : 5.79922 m. 
+I0213 13:35:15.687795 264056 waypoint_global_planner.cpp:1069] * 12 * makePlan [0] PortC_1_1(-5.291,1.735,-92) ---> v10(-5.3559,0.736,-92),Forward Straight,length: 1.0013 m ,speed_CMD: 1.2 m/s ,travel_time: 0.834414 sec.
+I0213 13:35:15.687817 264056 waypoint_global_planner.cpp:1090] * 13 * makePlan Get robot linear velocity : 1.83759e-08 m/s . 
+I0213 13:35:15.687829 264056 path_handler.hpp:84] * 14 * setPlan , global_plan size: (21)
+I0213 13:35:15.687871 264056 waypoint_global_planner.cpp:1187] * 15 * publishPlan /move_base/WaypointGlobalPlanner/path
+W0213 13:35:15.727721 264116 waypoint_global_planner.cpp:2260] * 4.7 * FeedbackCb PortC_1_1 ---> v10 Reduce MaxTheta AccLimTheta (1 / 21)  lookahead_curvature: 0.103436 , 1.77636e-08 m/s , 0.00922314 rad/s , set MaxTheta to 0.2, set AccLimTheta to 0.1 , goal_distance: 0.998258 m , angle_difference: 0.231267 degrees.
+I0213 13:35:15.727818 264116 teb_reconfigure_client.h:123]  Local_Planner_Reconfigure_Client *3* setMaxThetaAccLimTheta type =  New MaxTheta AccLimTheta .
+I0213 13:35:15.760563 264029 teb_reconfigure_client.h:43]  Local_Planner_Reconfigure_Client *4* setLocalPlannerConfigurationCallback 
+ - type =  New MaxTheta AccLimTheta .
+ - global_plan_viapoint_sep = 0.01 
+ - exact_arc_length    = false 
+ - max_vel_x           = 1.2 m/s
+ - max_vel_x_backwards = 1.2 m/s
+ - max_vel_y           = 0 m/s
+ - max_vel_theta       = 0.2 rad/s
+ - acc_lim_x           = 0.1 m/s^2
+ - acc_lim_y           = 0.01 m/s^2
+ - acc_lim_theta       = 0.1 rad/s^2
+ - min_turning_radius   = 0.4 m
+ - xy_goal_tolerance   = 0.03 m
+ - yaw_goal_tolerance  = 0.05 rad
+ - weight_acc_lim_x = 10 
+ - weight_acc_lim_theta = 10 
+ - weight_kinematics_turning_radius = 10 
+E0213 13:35:17.407768 264116 waypoint_global_planner.cpp:2107] * 4.7 * detectOscillations oscillating !  [0] PortC_1_1 ---> v10 0.232822 m/s , 0.00880913 rad/s ( 0.814826 m ) [robot is between source and target]
+W0213 13:35:20.647656 264115 waypoint_global_planner.cpp:1569] * 16 * MoveBaseResultCallback PortC_1_1 ---> v10 Result:  3 SUCCEEDED , [0]PortC_1_1--->v10 Goal reached. thread id [140358835734272].
+W0213 13:35:20.647725 264116 waypoint_global_planner.cpp:1705] * 17 * DoneCb  [0] PortC_1_1 ---> v10( 0.986801m 0.192518degrees ---> 0.0240435m 0.192518degrees ) [robot is between source and target]
+W0213 13:35:20.647763 264116 waypoint_global_planner.cpp:1707] * 17.1 * DoneCb  R16 stop at [ -5.33582 , 0.749217 , -92.1925 ] 
+W0213 13:35:20.647776 264116 waypoint_global_planner.cpp:1715] * 18 * DoneCb PortC_1_1 ---> v10 SUCCEEDED , Goal reached.

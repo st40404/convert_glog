@@ -50,7 +50,8 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                     if msg[1] == "Lift" and msg[2] == "Fork" and msg[3] == "Action":
                         end_state = data
                         save_signal = True
-                except:
+                except Exception as e:
+                    print("Error: ", e)
                     item = ""
 
                 if save_signal:
