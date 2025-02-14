@@ -30,7 +30,7 @@ with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
         'date', 'time', 'sourceID',
         'targetID', 'targetID_x', 'targetID_y', 'targetID_yaw',
         'end_x', 'end_y', 'end_yaw',
-        'error_xy', 'error_deg', 'action_state'
+        'error_xy', 'error_yaw', 'action_state'
     ])
 
 with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
@@ -45,7 +45,7 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
         sourceID, sourceID_x, sourceID_y, sourceID_yaw = "", "", "", ""
         targetID, targetID_x, targetID_y, targetID_yaw = "", "", "", ""
         end_x, end_y, end_yaw = "", "", ""
-        error_xy, error_deg, action_state = "", "", ""
+        error_xy, error_yaw, action_state = "", "", ""
 
         with open(os.path.join(folder_path, file), 'r', encoding='utf-8') as f:
             for line in f:
@@ -79,8 +79,8 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
 
 
                         if state == '17':
-                            error_xy = line.split("( ")[1].split("m")[0]
-                            error_deg = line.split("m ")[1].split("degrees")[0]
+                            error_xy = line.split("--->")[2].split("m")[0].strip()
+                            error_yaw = line.split("---> ")[2].split("m")[1].split("degrees")[0].strip()
 
                         if state == '17.1':
                             end = line.split("stop at [")[1].split(",")
@@ -102,14 +102,14 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                             date, time, sourceID,
                             targetID, targetID_x, targetID_y, targetID_yaw,
                             end_x, end_y, end_yaw,
-                            error_xy, error_deg, action_state
+                            error_xy, error_yaw, action_state
                         ])
 
                     date, time = "", ""
                     sourceID, sourceID_x, sourceID_y, sourceID_yaw = "", "", "", ""
                     targetID, targetID_x, targetID_y, targetID_yaw = "", "", "", ""
                     end_x, end_y, end_yaw = "", "", ""
-                    error_xy, error_deg, action_state = "", "", ""
+                    error_xy, error_yaw, action_state = "", "", ""
 
                     start_signal = False
                     end_signal = False
