@@ -41,7 +41,8 @@ targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw = "", "", "", "", ""
 error_xy, error_yaw = "", ""
 
 counter, amount_error_xy, amount_error_yaw, amount_curr_error_xy, amount_curr_error_yaw = 0.0, 0.0, 0.0, 0.0, 0.0
-
+max_error_xy, max_error_yaw, max_curr_error_xy, max_curr_error_yaw = 0.0, 0.0, 0.0, 0.0
+min_error_xy, min_error_yaw, min_curr_error_xy, min_curr_error_yaw = 100.0, 100.0, 100.0, 100.0
 
 with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
@@ -54,7 +55,6 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
             reader = csv.DictReader(f)
             for row in reader:
                 if (file == row[column_name]):
-
                     try:
                         sourceID = row['sourceID']
                         targetID = row['targetID']
@@ -79,6 +79,32 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                         end_yaw = row['end_yaw']
                         error_xy = row['error_xy']
                         error_yaw = row['error_yaw']
+
+
+                        if float(row['curr_error_xy']) > max_error_xy:
+                            max_error_xy = float(row['curr_error_xy'])
+
+                        if abs(float(row['curr_error_yaw'])) > abs(max_error_yaw):
+                            max_error_yaw = float(row['curr_error_yaw'])
+
+                        if float(row['error_xy']) > max_curr_error_xy:
+                            max_curr_error_xy = float(row['error_xy'])
+
+                        if abs(float(row['error_yaw'])) > abs(max_curr_error_yaw):
+                            max_curr_error_yaw = float(row['error_yaw'])
+
+                        if float(row['curr_error_xy']) < min_error_xy:
+                            min_error_xy = float(row['curr_error_xy'])
+
+                        if abs(float(row['curr_error_yaw'])) < abs(min_error_yaw):
+                            min_error_yaw = float(row['curr_error_yaw'])
+
+                        if float(row['error_xy']) < min_curr_error_xy:
+                            min_curr_error_xy = float(row['error_xy'])
+
+                        if abs(float(row['error_yaw'])) < abs(min_curr_error_yaw):
+                            min_curr_error_yaw = float(row['error_yaw'])
+
                     except:
                         pass
 
@@ -116,9 +142,13 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
             amount_curr_error_xy /= counter
             amount_curr_error_yaw /= counter
 
+            writer.writerow(["max_error_xy", max_error_xy, "max_error_yaw", max_error_yaw, "min_error_xy", min_error_xy, "min_error_yaw", min_error_yaw])
+            writer.writerow(["max_curr_error_xy", max_curr_error_xy, "max_curr_error_yaw", max_curr_error_yaw, "min_curr_error_xy", min_curr_error_xy, "min_curr_error_yaw", min_curr_error_yaw])
             writer.writerow(["avg_curr_error_xy", amount_curr_error_xy, "avg_curr_error_yaw", amount_curr_error_yaw,
                              "avg_error_xy", amount_error_xy, "avg_error_yaw", amount_error_yaw, "count", counter])
             writer.writerow([])
             counter, amount_error_xy, amount_error_yaw, amount_error_xy, amount_error_yaw = 0.0, 0.0, 0.0, 0.0, 0.0
+            max_error_xy, max_error_yaw, max_curr_error_xy, max_curr_error_yaw = 0.0, 0.0, 0.0, 0.0
+            min_error_xy, min_error_yaw, min_curr_error_xy, min_curr_error_yaw = 100.0, 100.0, 100.0, 100.0
 
 print(f"CSV save as {csv_file}")
