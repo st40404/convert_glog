@@ -1,6 +1,7 @@
 import csv
 import os
 import re
+import math
 
 ### parameter setting ###
 # LOG file path
@@ -27,7 +28,10 @@ sorted_files = sorted(files, key=extract_timestamp)
 with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
-        'date', 'time', 'sourceID',
+        'date', 'time',
+        'sourceID', 'sourceID_x', 'sourceID_y', 'sourceID_yaw',
+        'curr_x', 'curr_y', 'curr_yaw',
+        'curr_error_x', 'curr_error_y', 'curr_error_xy', 'curr_error_yaw',
         'targetID', 'targetID_x', 'targetID_y', 'targetID_yaw',
         'end_x', 'end_y', 'end_yaw',
         'error_xy', 'error_yaw', 'action_state'
@@ -43,6 +47,8 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
 
         date, time = "", ""
         sourceID, sourceID_x, sourceID_y, sourceID_yaw = "", "", "", ""
+        curr_x, curr_y, curr_yaw = "", "", ""
+        curr_error_x, curr_error_y, curr_error_xy, curr_error_yaw = "", "", "", ""
         targetID, targetID_x, targetID_y, targetID_yaw = "", "", "", ""
         end_x, end_y, end_yaw = "", "", ""
         error_xy, error_yaw, action_state = "", "", ""
@@ -77,6 +83,15 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                             targetID_y   = line.split(" y [")[1].split("]")[0].strip()
                             targetID_yaw = line.split(" yaw [")[1].split("degree")[0].strip()
 
+                        if state == '5':
+                            curr_x = line.split("(")[1].split(",")[0]
+                            curr_y = line.split("(")[1].split(",")[1]
+                            curr_yaw = line.split("(")[1].split(",")[2].split(")")[0]
+
+                            curr_error_x = float(curr_x) - float(sourceID_x)
+                            curr_error_y = float(curr_y) - float(sourceID_y)
+                            curr_error_xy = math.sqrt(float(curr_error_x)*float(curr_error_x) + float(curr_error_y)*float(curr_error_y))
+                            curr_error_yaw = float(curr_yaw) - float(sourceID_yaw)
 
                         if state == '17':
                             error_xy = line.split("--->")[2].split("m")[0].strip()
@@ -99,7 +114,10 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                 if end_signal:
                     if all([date, time]):
                         writer.writerow([
-                            date, time, sourceID,
+                            date, time,
+                            sourceID, sourceID_x, sourceID_y, sourceID_yaw,
+                            curr_x, curr_y, curr_yaw,
+                            curr_error_x, curr_error_y, curr_error_xy, curr_error_yaw,
                             targetID, targetID_x, targetID_y, targetID_yaw,
                             end_x, end_y, end_yaw,
                             error_xy, error_yaw, action_state
@@ -107,6 +125,8 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
 
                     date, time = "", ""
                     sourceID, sourceID_x, sourceID_y, sourceID_yaw = "", "", "", ""
+                    curr_x, curr_y, curr_yaw = "", "", ""
+                    curr_error_x, curr_error_y, curr_error_xy, curr_error_yaw = "", "", "", ""
                     targetID, targetID_x, targetID_y, targetID_yaw = "", "", "", ""
                     end_x, end_y, end_yaw = "", "", ""
                     error_xy, error_yaw, action_state = "", "", ""

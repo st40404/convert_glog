@@ -25,14 +25,22 @@ targetID_list = list(targetID_value)
 with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
-        'sourceID', 'targetID', 'targetID_x', 'targetID_y', 'targetID_yaw', 'end_x', 'end_y', 'end_yaw', 'error_xy', 'error_yaw'
+        'sourceID', 'targetID',
+        'sourceID_x', 'sourceID_y', 'sourceID_yaw',
+        'curr_x', 'curr_y', 'curr_yaw',
+        'curr_error_x', 'curr_error_y', 'curr_error_xy', 'curr_error_yaw',
+        'targetID_x', 'targetID_y', 'targetID_yaw',
+        'end_x', 'end_y', 'end_yaw', 'error_xy', 'error_yaw'
     ])
 
-
-sourceID, targetID, targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw = "", "", "", "", "", "", "", ""
+sourceID, targetID = "", ""
+sourceID_x, sourceID_y, sourceID_yaw = "", "", ""
+curr_x, curr_y, curr_yaw = "", "", ""
+curr_error_x, curr_error_y, curr_error_xy, curr_error_yaw = "", "", "", ""
+targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw = "", "", "", "", "", ""
 error_xy, error_yaw = "", ""
 
-counter, amount_error_xy, amount_error_yaw = 0.0, 0.0, 0.0
+counter, amount_error_xy, amount_error_yaw, amount_curr_error_xy, amount_curr_error_yaw = 0.0, 0.0, 0.0, 0.0, 0.0
 
 
 with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
@@ -50,6 +58,19 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                     try:
                         sourceID = row['sourceID']
                         targetID = row['targetID']
+
+                        sourceID_x = row['sourceID_x']
+                        sourceID_y = row['sourceID_y']
+                        sourceID_yaw = row['sourceID_yaw']
+
+                        curr_x = row['curr_x']
+                        curr_y = row['curr_y']
+                        curr_yaw = row['curr_yaw']
+                        curr_error_x = row['curr_error_x']
+                        curr_error_y = row['curr_error_y']
+                        curr_error_xy = row['curr_error_xy']
+                        curr_error_yaw = row['curr_error_yaw']
+
                         targetID_x = row['targetID_x']
                         targetID_y = row['targetID_y']
                         targetID_yaw = row['targetID_yaw']
@@ -61,27 +82,43 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                     except:
                         pass
 
-                    if all([sourceID, targetID, targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw]):
+                    if all([sourceID, targetID,
+                            sourceID_x, sourceID_y, sourceID_yaw,
+                            curr_x, curr_y, curr_yaw,
+                            curr_error_x, curr_error_y, curr_error_xy, curr_error_yaw,
+                            targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw]):
                         writer.writerow([
-                            sourceID, targetID, targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw, error_xy, error_yaw
+                            sourceID, targetID,
+                            sourceID_x, sourceID_y, sourceID_yaw,
+                            curr_x, curr_y, curr_yaw,
+                            curr_error_x, curr_error_y, curr_error_xy, curr_error_yaw,
+                            targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw, error_xy, error_yaw
                         ])
 
                         try:
                             amount_error_xy += float(error_xy)
                             amount_error_yaw += float(error_yaw)
+                            amount_curr_error_xy += float(curr_error_xy)
+                            amount_curr_error_yaw += float(curr_error_yaw)
                             counter += 1
                         except:
                             pass
 
-                        sourceID, targetID, targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw = "", "", "", "", "", "", "", ""
+                        sourceID, targetID = "", ""
+                        sourceID_x, sourceID_y, sourceID_yaw = "", "", ""
+                        curr_x, curr_y, curr_yaw = "", "", ""
+                        curr_error_x, curr_error_y, curr_error_xy, curr_error_yaw = "", "", "", ""
+                        targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw = "", "", "", "", "", ""
                         error_xy, error_yaw = "", ""
-
 
             amount_error_xy /= counter
             amount_error_yaw /= counter
+            amount_curr_error_xy /= counter
+            amount_curr_error_yaw /= counter
 
-            writer.writerow(["avg_error_xy", amount_error_xy, "avg_error_yaw", amount_error_yaw, "count", counter])
+            writer.writerow(["avg_curr_error_xy", amount_curr_error_xy, "avg_curr_error_yaw", amount_curr_error_yaw,
+                             "avg_error_xy", amount_error_xy, "avg_error_yaw", amount_error_yaw, "count", counter])
             writer.writerow([])
-            counter, amount_error_xy, amount_error_yaw = 0.0, 0.0, 0.0
+            counter, amount_error_xy, amount_error_yaw, amount_error_xy, amount_error_yaw = 0.0, 0.0, 0.0, 0.0, 0.0
 
 print(f"CSV save as {csv_file}")
