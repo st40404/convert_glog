@@ -24,14 +24,14 @@ targetID_list = list(targetID_value)
 ### create csv and write tile ###
 with open(csv_file, 'w', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
-    writer.writerow([
-        'sourceID', 'targetID',
-        'sourceID_x', 'sourceID_y', 'sourceID_yaw',
-        'curr_x', 'curr_y', 'curr_yaw',
-        'curr_error_x', 'curr_error_y', 'curr_error_xy', 'curr_error_yaw',
-        'targetID_x', 'targetID_y', 'targetID_yaw',
-        'end_x', 'end_y', 'end_yaw', 'error_xy', 'error_yaw'
-    ])
+    # writer.writerow([
+    #     'sourceID', 'targetID',
+    #     'sourceID_x', 'sourceID_y', 'sourceID_yaw',
+    #     'curr_x', 'curr_y', 'curr_yaw',
+    #     'curr_error_x', 'curr_error_y', 'curr_error_xy', 'curr_error_yaw',
+    #     'targetID_x', 'targetID_y', 'targetID_yaw',
+    #     'end_x', 'end_y', 'end_yaw', 'error_xy', 'error_yaw'
+    # ])
 
 sourceID, targetID = "", ""
 sourceID_x, sourceID_y, sourceID_yaw = "", "", ""
@@ -46,11 +46,18 @@ min_error_xy, min_error_yaw, min_curr_error_xy, min_curr_error_yaw = 100.0, 100.
 
 with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
-
     ### detect and prase date ###
     for file in targetID_list:
         # detect all target ID and save corresponding data
         with open(read_file, newline='', encoding='utf-8') as f:
+            writer.writerow([
+                'sourceID', 'targetID',
+                'sourceID_x', 'sourceID_y', 'sourceID_yaw',
+                'curr_x', 'curr_y', 'curr_yaw',
+                'curr_error_x', 'curr_error_y', 'curr_error_xy', 'curr_error_yaw',
+                'targetID_x', 'targetID_y', 'targetID_yaw',
+                'end_x', 'end_y', 'end_yaw', 'error_xy', 'error_yaw'
+            ])
             # read csv and convert to dict
             reader = csv.DictReader(f)
             for row in reader:
@@ -81,29 +88,29 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                         error_yaw = row['error_yaw']
 
 
-                        if float(row['curr_error_xy']) > max_error_xy:
-                            max_error_xy = float(row['curr_error_xy'])
+                        if round(float(row['curr_error_xy']), 5) > max_curr_error_xy:
+                            max_curr_error_xy = round(float(row['curr_error_xy']), 5)
 
-                        if abs(float(row['curr_error_yaw'])) > abs(max_error_yaw):
-                            max_error_yaw = float(row['curr_error_yaw'])
+                        if abs(round(float(row['curr_error_yaw']), 5)) > abs(max_curr_error_yaw):
+                            max_curr_error_yaw = round(float(row['curr_error_yaw']), 5)
 
-                        if float(row['error_xy']) > max_curr_error_xy:
-                            max_curr_error_xy = float(row['error_xy'])
+                        if round(float(row['error_xy']), 5) > max_error_xy:
+                            max_error_xy = round(float(row['error_xy']), 5)
 
-                        if abs(float(row['error_yaw'])) > abs(max_curr_error_yaw):
-                            max_curr_error_yaw = float(row['error_yaw'])
+                        if abs(round(float(row['error_yaw']), 5)) > abs(max_error_yaw):
+                            max_error_yaw = round(float(row['error_yaw']), 5)
 
-                        if float(row['curr_error_xy']) < min_error_xy:
-                            min_error_xy = float(row['curr_error_xy'])
+                        if round(float(row['curr_error_xy']), 5) < min_curr_error_xy:
+                            min_curr_error_xy = round(float(row['curr_error_xy']), 5)
 
-                        if abs(float(row['curr_error_yaw'])) < abs(min_error_yaw):
-                            min_error_yaw = float(row['curr_error_yaw'])
+                        if abs(round(float(row['curr_error_yaw']), 5)) < abs(min_curr_error_yaw):
+                            min_curr_error_yaw = round(float(row['curr_error_yaw']), 5)
 
-                        if float(row['error_xy']) < min_curr_error_xy:
-                            min_curr_error_xy = float(row['error_xy'])
+                        if round(float(row['error_xy']), 5) < min_error_xy:
+                            min_error_xy = round(float(row['error_xy']), 5)
 
-                        if abs(float(row['error_yaw'])) < abs(min_curr_error_yaw):
-                            min_curr_error_yaw = float(row['error_yaw'])
+                        if abs(round(float(row['error_yaw']), 5)) < abs(min_error_yaw):
+                            min_error_yaw = round(float(row['error_yaw']), 5)
 
                     except:
                         pass
@@ -137,17 +144,20 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                         targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw = "", "", "", "", "", ""
                         error_xy, error_yaw = "", ""
 
-            amount_error_xy /= counter
-            amount_error_yaw /= counter
-            amount_curr_error_xy /= counter
-            amount_curr_error_yaw /= counter
+            amount_error_xy = round(amount_error_xy/counter, 5)
+            amount_error_yaw = round(amount_error_yaw/counter, 5)
+            amount_curr_error_xy = round(amount_curr_error_xy/counter, 5)
+            amount_curr_error_yaw = round(amount_curr_error_yaw/counter, 5)
 
-            writer.writerow(["max_error_xy", max_error_xy, "max_error_yaw", max_error_yaw, "min_error_xy", min_error_xy, "min_error_yaw", min_error_yaw])
-            writer.writerow(["max_curr_error_xy", max_curr_error_xy, "max_curr_error_yaw", max_curr_error_yaw, "min_curr_error_xy", min_curr_error_xy, "min_curr_error_yaw", min_curr_error_yaw])
-            writer.writerow(["avg_curr_error_xy", amount_curr_error_xy, "avg_curr_error_yaw", amount_curr_error_yaw,
-                             "avg_error_xy", amount_error_xy, "avg_error_yaw", amount_error_yaw, "count", counter])
+
+
+            writer.writerow(["avg_curr_error_xy", "max_curr_error_xy", "min_curr_error_xy", "avg_curr_error_yaw", "max_curr_error_yaw", "min_curr_error_yaw"])
+            writer.writerow([amount_curr_error_xy, max_curr_error_xy, min_curr_error_xy, amount_curr_error_yaw, max_curr_error_yaw, min_curr_error_yaw])
+            writer.writerow(["avg_error_xy", "max_error_xy", "min_error_xy", "avg_error_yaw", "max_error_yaw", "min_error_yaw", "count"])
+            writer.writerow([amount_error_xy, max_error_xy, min_error_xy, amount_error_yaw, max_error_yaw, min_error_yaw, counter])
+
             writer.writerow([])
-            counter, amount_error_xy, amount_error_yaw, amount_error_xy, amount_error_yaw = 0.0, 0.0, 0.0, 0.0, 0.0
+            counter, amount_error_xy, amount_error_yaw, amount_curr_error_xy, amount_curr_error_yaw = 0.0, 0.0, 0.0, 0.0, 0.0
             max_error_xy, max_error_yaw, max_curr_error_xy, max_curr_error_yaw = 0.0, 0.0, 0.0, 0.0
             min_error_xy, min_error_yaw, min_curr_error_xy, min_curr_error_yaw = 100.0, 100.0, 100.0, 100.0
 
