@@ -4,7 +4,8 @@ import re
 
 ### parameter setting ###
 # LOG file path
-folder_path = "./LOG/linde_base_node"
+# folder_path = "./LOG/linde_base_node"
+folder_path = "./LOG/linde_r16_base_node"
 # front part of LOG file name
 file_name = "linde_r16_base_node.linde-r16.ros.log.INFO"
 # saved csv file name

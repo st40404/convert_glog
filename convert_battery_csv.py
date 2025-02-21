@@ -4,7 +4,8 @@ import re
 
 ### parameter setting ###
 # LOG file path
-folder_path = "./LOG/async_serial_battery"
+# folder_path = "./LOG/async_serial_battery"
+folder_path = "./LOG/async_serial_battery_r16"
 # front part of LOG file name
 file_name = "async_serial_battery_r16.linde-r16.ros.log.INFO"
 # saved csv file name
