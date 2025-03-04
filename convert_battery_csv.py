@@ -56,41 +56,41 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                 if item == "時間":
                     time = value[1] + ":" + value[2] + ":" + value[3]
                 elif item == "電壓":
-                    voltage = value[1]
+                    voltage = value[1].strip()
                 elif item == "電流":
-                    current = value[1]
+                    current = value[1].strip()
                 elif item == "SOC":
-                    soc = value[1]
+                    soc = value[1].strip()
                 elif item == "Temp Max":
-                    tempmax = value[1]
+                    tempmax = value[1].strip()
                 elif item == "Temp Min":
-                    tempmin = value[1]
+                    tempmin = value[1].strip()
                 elif item == "CellV Max":
-                    cellV_max = value[1]
+                    cellV_max = value[1].strip()
                 elif item == "CellV Min":
-                    cellV_min = value[1]
+                    cellV_min = value[1].strip()
                 elif item == "CHG_Current":
-                    chg_current = value[1]
+                    chg_current = value[1].strip()
                 elif item == "DSG_Current":
-                    dsg_current = value[1]
+                    dsg_current = value[1].strip()
                 elif item == "Basic_Status0":
-                    basic_status0 = value[1]
+                    basic_status0 = value[1].strip()
                 elif item == "Basic_Status1":
-                    basic_status1 = value[1]
+                    basic_status1 = value[1].strip()
                 elif item == "Basic_Status2":
-                    basic_status2 = value[1]
+                    basic_status2 = value[1].strip()
                 elif item == "ExtendedStatus":
-                    extendedStatus = value[1]
+                    extendedStatus = value[1].strip()
                 elif item == "SOCStatus":
-                    socStatus = value[1]
+                    socStatus = value[1].strip()
                 elif item == "ErrorCode":
-                    errorCode = value[1]
+                    errorCode = value[1].strip()
                 elif item == "Relay/Mos":
-                    relay_Mos = value[1]
+                    relay_Mos = value[1].strip()
                 elif item == "Cycle":
-                    cycle = value[1]
+                    cycle = value[1].strip()
                 elif item == "FW Version":
-                    fw_version = value[1]
+                    fw_version = value[1].strip()
 
                 if all([time, voltage, current, soc, tempmax, tempmin, cellV_max, cellV_min,
                         chg_current, dsg_current, basic_status0, basic_status1, basic_status2,
