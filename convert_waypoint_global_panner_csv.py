@@ -69,29 +69,29 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
 
                 if start_signal:
                     try:
-                        if state == '1.1':
-                            sourceID = line.split("Source ID : ")[1].split("pose")[0].strip()
+                        if state == '12':
+                            sourceID = line.split("]")[2].split("(")[0].strip()
 
-                            sourceID_x   = line.split(" x [")[1].split("]")[0].strip()
-                            sourceID_y   = line.split(" y [")[1].split("]")[0].strip()
-                            sourceID_yaw = line.split(" yaw [")[1].split("degree")[0].strip()
+                            sourceID_x   = line.split("(")[1].split(",")[0].strip()
+                            sourceID_y   = line.split("(")[1].split(",")[1].strip()
+                            sourceID_yaw = line.split("(")[1].split(",")[2].split(")")[0].strip()
 
-                        if state == '1.2':
-                            targetID = line.split("Target ID : ")[1].split("pose")[0].strip()
 
-                            targetID_x   = line.split(" x [")[1].split("]")[0].strip()
-                            targetID_y   = line.split(" y [")[1].split("]")[0].strip()
-                            targetID_yaw = line.split(" yaw [")[1].split("degree")[0].strip()
+                            targetID = line.split("--->")[1].split("(")[0].strip()
 
-                        if state == '5':
-                            curr_x = line.split("(")[1].split(",")[0]
-                            curr_y = line.split("(")[1].split(",")[1]
-                            curr_yaw = line.split("(")[1].split(",")[2].split(")")[0]
+                            targetID_x   = line.split("--->")[1].split("(")[1].split(",")[0].strip()
+                            targetID_y   = line.split("--->")[1].split("(")[1].split(",")[1].strip()
+                            targetID_yaw = line.split("--->")[1].split("(")[1].split(",")[2].split(")")[0].strip()
 
                             curr_error_x = float(curr_x) - float(sourceID_x)
                             curr_error_y = float(curr_y) - float(sourceID_y)
                             curr_error_xy = math.sqrt(float(curr_error_x)*float(curr_error_x) + float(curr_error_y)*float(curr_error_y))
                             curr_error_yaw = float(curr_yaw) - float(sourceID_yaw)
+
+                        if state == '5':
+                            curr_x = line.split("(")[1].split(",")[0]
+                            curr_y = line.split("(")[1].split(",")[1]
+                            curr_yaw = line.split("(")[1].split(",")[2].split(")")[0]
 
                         if state == '17':
                             error_xy = line.split("--->")[2].split("m")[0].strip()
