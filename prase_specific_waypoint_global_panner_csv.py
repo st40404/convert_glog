@@ -144,10 +144,22 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                         targetID_x, targetID_y, targetID_yaw, end_x, end_y, end_yaw = "", "", "", "", "", ""
                         error_xy, error_yaw = "", ""
 
-            amount_error_xy = round(amount_error_xy/counter, 5)
-            amount_error_yaw = round(amount_error_yaw/counter, 5)
-            amount_curr_error_xy = round(amount_curr_error_xy/counter, 5)
-            amount_curr_error_yaw = round(amount_curr_error_yaw/counter, 5)
+            try:
+                amount_error_xy = round(amount_error_xy/counter, 5)
+            except:
+                pass
+            try:
+                amount_error_yaw = round(amount_error_yaw/counter, 5)
+            except:
+                pass
+            try:
+                amount_curr_error_xy = round(amount_curr_error_xy/counter, 5)
+            except:
+                pass
+            try:
+                amount_curr_error_yaw = round(amount_curr_error_yaw/counter, 5)
+            except:
+                pass
 
 
 

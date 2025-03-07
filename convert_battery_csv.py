@@ -56,9 +56,9 @@ with open(csv_file, 'a', newline='', encoding='utf-8') as csvfile:
                 if item == "時間":
                     time = value[1] + ":" + value[2] + ":" + value[3]
                 elif item == "電壓":
-                    voltage = value[1].strip()
+                    voltage = value[1].split("V")[0]
                 elif item == "電流":
-                    current = value[1].strip()
+                    current = value[1].split("A")[0]
                 elif item == "SOC":
                     soc = value[1].strip()
                 elif item == "Temp Max":
